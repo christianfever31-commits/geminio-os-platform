@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geminio OS — Technical Writing Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+            --text-main: #c9d1d9;
+            --text-heading: #f0f6fc;
+            --accent-color: #2f81f7;
+            --accent-hover: #58a6ff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            color: var(--text-heading);
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p.subtitle {
+            font-size: 1.05rem;
+            color: #8b949e;
+            line-height: 1.5;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent-color);
+        }
+
+        .card h2 {
+            font-size: 1.1rem;
+            color: var(--text-heading);
+            margin-top: 0;
+            margin-bottom: 0.75rem;
+        }
+
+        .card-link {
+            display: inline-block;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+
+        .card-link:hover {
+            text-decoration: underline;
+            color: var(--accent-hover);
+        }
+
+        footer {
+            margin-top: 3rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1.5rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #8b949e;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Geminio OS Technical Documentation</h1>
+            <p class="subtitle">
+                Technical writing portfolio featuring API specs, deployment guides, system architecture, and QA reports for Geminio OS.
+            </p>
+        </header>
+
+        <div class="grid">
+            <div class="card">
+                <h2>API Documentation</h2>
+                <p style="font-size: 0.85rem; color: #8b949e;">Detailed tRPC endpoints, authentication flows, and request/response models.</p>
+                <a href="API_DOCUMENTATION.pdf" target="_blank" class="card-link">View PDF &rarr;</a>
+            </div>
+
+            <div class="card">
+                <h2>Capability Catalog</h2>
+                <p style="font-size: 0.85rem; color: #8b949e;">Full breakdown of platform features, modules, and engine capabilities.</p>
+                <a href="CAPABILITY_CATALOG.pdf" target="_blank" class="card-link">View PDF &rarr;</a>
+            </div>
+
+            <div class="card">
+                <h2>Codebase Audit</h2>
+                <p style="font-size: 0.85rem; color: #8b949e;">Comprehensive analysis of codebase structure, dependencies, and strict type safety.</p>
+                <a href="CODEBASE_AUDIT (1).pdf" target="_blank" class="card-link">View PDF &rarr;</a>
+            </div>
+
+            <div class="card">
+                <h2>Complete Documentation</h2>
+                <p style="font-size: 0.85rem; color: #8b949e;">Master technical manual combining all architectural and setup specifications.</p>
+                <a href="COMPLETE_DOCUMENTATION.pdf" target="_blank" class="card-link">View PDF &rarr;</a>
+            </div>
+
+            <div class="card">
+                <h2>Deployment Guide</h2>
+                <p style="font-size: 0.85rem; color: #8b949e;">Step-by-step instructions for Docker, Kubernetes, and environment setup.</p>
+                <a href="DEPLOYMENT_GUIDE.pdf" target="_blank" class="card-link">View PDF &rarr;</a>
+            </div>
+
+            <div class="card">
+                <h2>Production Readiness</h2>
+                <p style="font-size: 0.85rem; color: #8b949e;">Security, encryption checks, scaling parameters, and monitoring benchmarks.</p>
+                <a href="PRODUCTION_READINESS (2).pdf" target="_blank" class="card-link">View PDF &rarr;</a>
+            </div>
+
+            <div class="card">
+                <h2>Project Summary</h2>
+                <p style="font-size: 0.85rem; color: #8b949e;">Executive summary highlighting core objectives and key milestones.</p>
+                <a href="PROJECT_SUMMARY.pdf" target="_blank" class="card-link">View PDF &rarr;</a>
+            </div>
+
+            <div class="card">
+                <h2>QA Test Report</h2>
+                <p style="font-size: 0.85rem; color: #8b949e;">Test suite coverage metrics, execution outcomes, and validation status.</p>
+                <a href="QA_TEST_REPORT (1).pdf" target="_blank" class="card-link">View PDF &rarr;</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; Geminio OS Documentation Portfolio | Hosted on Netlify</p>
+        </footer>
+    </div>
+
+</body>
+  </html>
+  
