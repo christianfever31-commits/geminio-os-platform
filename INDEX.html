@@ -1,171 +1,1227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geminio OS — Technical Writing Portfolio</title>
-    <style>
-        :root {
-            --bg-color: #0d1117;
-            --card-bg: #161b22;
-            --border-color: #30363d;
-            --text-main: #c9d1d9;
-            --text-heading: #f0f6fc;
-            --accent-color: #2f81f7;
-            --accent-hover: #58a6ff;
-        }
+  <meta charset="UTF-8">
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            margin: 0;
-            padding: 2rem 1rem;
-            display: flex;
-            justify-content: center;
-        }
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-        .container {
-            max-width: 900px;
-            width: 100%;
-        }
+  <meta
+    name="description"
+    content="Christian Ezenwa — Technical Writer and Mobile-First Developer. Explore Geminio OS, automation, technical documentation, SEO auditing, and AI-agent projects."
+  >
 
-        header {
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 1.5rem;
-            margin-bottom: 2rem;
-        }
+  <meta name="theme-color" content="#07111f">
 
-        h1 {
-            color: var(--text-heading);
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
+  <title>
+    Christian Ezenwa | Technical Writer & Mobile-First Developer
+  </title>
 
-        p.subtitle {
-            font-size: 1.05rem;
-            color: #8b949e;
-            line-height: 1.5;
-        }
+  <style>
+    /* =========================================================
+       RESET
+    ========================================================= */
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-            gap: 1.25rem;
-        }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        .card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 1.25rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            transition: transform 0.2s ease, border-color 0.2s ease;
-        }
+    html {
+      scroll-behavior: smooth;
+    }
 
-        .card:hover {
-            transform: translateY(-2px);
-            border-color: var(--accent-color);
-        }
+    body {
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
 
-        .card h2 {
-            font-size: 1.1rem;
-            color: var(--text-heading);
-            margin-top: 0;
-            margin-bottom: 0.75rem;
-        }
+      background: #07111f;
+      color: #f5f7fb;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
 
-        .card-link {
-            display: inline-block;
-            color: var(--accent-color);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            margin-top: 1rem;
-        }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-        .card-link:hover {
-            text-decoration: underline;
-            color: var(--accent-hover);
-        }
+    img {
+      max-width: 100%;
+      display: block;
+    }
 
-        footer {
-            margin-top: 3rem;
-            border-top: 1px solid var(--border-color);
-            padding-top: 1.5rem;
-            text-align: center;
-            font-size: 0.85rem;
-            color: #8b949e;
-        }
-    </style>
+    button,
+    input,
+    textarea {
+      font: inherit;
+    }
+
+    /* =========================================================
+       VARIABLES
+    ========================================================= */
+
+    :root {
+      --background: #07111f;
+      --background-soft: #0b1728;
+      --surface: #0e1b2e;
+      --surface-light: #12243b;
+
+      --text: #f5f7fb;
+      --muted: #a7b4c7;
+
+      --accent: #54e1d0;
+      --accent-dark: #24b9aa;
+
+      --purple: #8b91ff;
+
+      --border: rgba(255, 255, 255, 0.10);
+
+      --max-width: 1150px;
+
+      --radius: 22px;
+    }
+
+    /* =========================================================
+       GLOBAL
+    ========================================================= */
+
+    .container {
+      width: min(
+        var(--max-width),
+        calc(100% - 32px)
+      );
+
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 100px 0;
+
+      border-top:
+        1px solid var(--border);
+    }
+
+    .section-label {
+      color: var(--accent);
+
+      text-transform: uppercase;
+
+      letter-spacing: 0.16em;
+
+      font-size: 0.78rem;
+
+      font-weight: 800;
+
+      margin-bottom: 12px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      letter-spacing: -0.035em;
+    }
+
+    h2 {
+      font-size: clamp(
+        2rem,
+        5vw,
+        3.5rem
+      );
+
+      line-height: 1.08;
+
+      margin-bottom: 20px;
+    }
+
+    .section-description {
+      max-width: 760px;
+
+      color: var(--muted);
+
+      font-size: 1.05rem;
+
+      margin-bottom: 45px;
+    }
+
+    /* =========================================================
+       NAVIGATION
+    ========================================================= */
+
+    .navbar {
+      position: sticky;
+
+      top: 0;
+
+      z-index: 100;
+
+      backdrop-filter: blur(18px);
+
+      background:
+        rgba(7, 17, 31, 0.82);
+
+      border-bottom:
+        1px solid var(--border);
+    }
+
+    .nav-container {
+      min-height: 72px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 1.05rem;
+
+      font-weight: 850;
+
+      letter-spacing: -0.03em;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+
+      gap: 24px;
+
+      color: var(--muted);
+
+      font-size: 0.92rem;
+    }
+
+    .nav-links a {
+      transition:
+        color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
+    /* =========================================================
+       HERO
+    ========================================================= */
+
+    .hero {
+      position: relative;
+
+      min-height: 85vh;
+
+      display: flex;
+
+      align-items: center;
+
+      padding:
+        100px 0;
+
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+
+      position: absolute;
+
+      width: 500px;
+
+      height: 500px;
+
+      border-radius: 50%;
+
+      background:
+        rgba(84, 225, 208, 0.08);
+
+      filter: blur(80px);
+
+      top: -220px;
+
+      right: -180px;
+
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: "";
+
+      position: absolute;
+
+      width: 450px;
+
+      height: 450px;
+
+      border-radius: 50%;
+
+      background:
+        rgba(139, 145, 255, 0.08);
+
+      filter: blur(90px);
+
+      bottom: -250px;
+
+      left: -180px;
+
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+
+      z-index: 2;
+    }
+
+    .status {
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 9px;
+
+      padding:
+        7px 13px;
+
+      border:
+        1px solid
+        rgba(84, 225, 208, 0.25);
+
+      border-radius: 999px;
+
+      background:
+        rgba(84, 225, 208, 0.06);
+
+      color: var(--accent);
+
+      font-size: 0.82rem;
+
+      font-weight: 750;
+
+      margin-bottom: 25px;
+    }
+
+    .status-dot {
+      width: 7px;
+
+      height: 7px;
+
+      border-radius: 50%;
+
+      background: var(--accent);
+    }
+
+    .hero h1 {
+      max-width: 950px;
+
+      font-size: clamp(
+        3rem,
+        8vw,
+        6.5rem
+      );
+
+      line-height: 0.98;
+
+      margin-bottom: 28px;
+    }
+
+    .gradient-text {
+      background:
+        linear-gradient(
+          100deg,
+          #ffffff,
+          var(--accent),
+          var(--purple)
+        );
+
+      -webkit-background-clip: text;
+
+      background-clip: text;
+
+      color: transparent;
+    }
+
+    .hero-description {
+      max-width: 760px;
+
+      color: var(--muted);
+
+      font-size: clamp(
+        1.05rem,
+        2vw,
+        1.22rem
+      );
+
+      margin-bottom: 35px;
+    }
+
+    .buttons {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      min-height: 48px;
+
+      padding:
+        0 19px;
+
+      border-radius: 12px;
+
+      border:
+        1px solid var(--border);
+
+      background:
+        var(--surface);
+
+      font-weight: 750;
+
+      transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+    }
+
+    .button:hover {
+      transform:
+        translateY(-2px);
+    }
+
+    .button-primary {
+      background:
+        var(--accent);
+
+      color: #061014;
+
+      border-color:
+        var(--accent);
+    }
+
+    .button-primary:hover {
+      background:
+        #72eadc;
+    }
+
+    /* =========================================================
+       ABOUT
+    ========================================================= */
+
+    .cards {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 18px;
+    }
+
+    .card {
+      padding: 27px;
+
+      border:
+        1px solid var(--border);
+
+      border-radius:
+        var(--radius);
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(18, 36, 59, 0.85),
+          rgba(14, 27, 46, 0.85)
+        );
+
+      box-shadow:
+        0 20px 60px
+        rgba(0, 0, 0, 0.12);
+    }
+
+    .card-icon {
+      font-size: 1.6rem;
+
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      font-size: 1.15rem;
+
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: var(--muted);
+
+      font-size: 0.96rem;
+    }
+
+    /* =========================================================
+       TECHNOLOGIES
+    ========================================================= */
+
+    .technology-box {
+      padding: 32px;
+
+      border:
+        1px solid var(--border);
+
+      border-radius:
+        var(--radius);
+
+      background:
+        var(--surface);
+    }
+
+    .technology-box h3 {
+      margin-bottom: 20px;
+    }
+
+    .technology-list {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 10px;
+    }
+
+    .technology {
+      padding:
+        8px 13px;
+
+      border:
+        1px solid var(--border);
+
+      border-radius:
+        999px;
+
+      background:
+        rgba(255, 255, 255, 0.035);
+
+      color:
+        #dce5f1;
+
+      font-size:
+        0.9rem;
+    }
+
+    /* =========================================================
+       GEMINIO OS
+    ========================================================= */
+
+    .geminio {
+      position: relative;
+
+      overflow: hidden;
+
+      padding: 45px;
+
+      border:
+        1px solid
+        rgba(84, 225, 208, 0.2);
+
+      border-radius:
+        28px;
+
+      background:
+        radial-gradient(
+          circle at 90% 5%,
+          rgba(139,145,255,0.14),
+          transparent 32%
+        ),
+
+        linear-gradient(
+          145deg,
+          #101e34,
+          #0a1425
+        );
+    }
+
+    .geminio-badge {
+      display: inline-block;
+
+      padding:
+        6px 11px;
+
+      border-radius:
+        999px;
+
+      background:
+        rgba(84,225,208,0.08);
+
+      color:
+        var(--accent);
+
+      border:
+        1px solid
+        rgba(84,225,208,0.2);
+
+      font-size:
+        0.78rem;
+
+      font-weight:
+        800;
+
+      margin-bottom:
+        18px;
+    }
+
+    .geminio h3 {
+      font-size:
+        clamp(
+          2rem,
+          5vw,
+          3.5rem
+        );
+
+      margin-bottom:
+        15px;
+    }
+
+    .geminio-description {
+      max-width:
+        780px;
+
+      color:
+        var(--muted);
+
+      font-size:
+        1.05rem;
+    }
+
+    .geminio-grid {
+      display: grid;
+
+      grid-template-columns:
+        1.25fr 0.75fr;
+
+      gap:
+        25px;
+
+      margin-top:
+        35px;
+    }
+
+    .feature-list {
+      list-style:
+        none;
+
+      display:
+        grid;
+
+      gap:
+        12px;
+    }
+
+    .feature-list li {
+      position:
+        relative;
+
+      padding-left:
+        28px;
+
+      color:
+        #dbe4ef;
+    }
+
+    .feature-list li::before {
+      content:
+        "✓";
+
+      position:
+        absolute;
+
+      left:
+        0;
+
+      color:
+        var(--accent);
+
+      font-weight:
+        900;
+    }
+
+    .project-status {
+      padding:
+        25px;
+
+      border:
+        1px solid var(--border);
+
+      border-radius:
+        18px;
+
+      background:
+        rgba(0,0,0,0.12);
+    }
+
+    .project-status strong {
+      display:
+        block;
+
+      color:
+        var(--accent);
+
+      font-size:
+        1.2rem;
+
+      margin-bottom:
+        10px;
+    }
+
+    .project-status p {
+      color:
+        var(--muted);
+
+      font-size:
+        0.93rem;
+    }
+
+    /* =========================================================
+       OTHER PROJECTS
+    ========================================================= */
+
+    .project-card {
+      min-height:
+        230px;
+    }
+
+    .project-card h3 {
+      margin-bottom:
+        10px;
+    }
+
+    /* =========================================================
+       WRITING
+    ========================================================= */
+
+    .writing-grid {
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap:
+        18px;
+    }
+
+    .writing-item {
+      padding:
+        27px;
+
+      border:
+        1px solid var(--border);
+
+      border-radius:
+        var(--radius);
+
+      background:
+        var(--surface);
+    }
+
+    .writing-item h3 {
+      margin-bottom:
+        10px;
+    }
+
+    .writing-item p {
+      color:
+        var(--muted);
+    }
+
+    /* =========================================================
+       CONTACT
+    ========================================================= */
+
+    .contact {
+      text-align:
+        center;
+
+      padding-bottom:
+        115px;
+    }
+
+    .contact-description {
+      max-width:
+        700px;
+
+      margin:
+        0 auto 30px;
+
+      color:
+        var(--muted);
+
+      font-size:
+        1.05rem;
+    }
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+
+    footer {
+      border-top:
+        1px solid var(--border);
+
+      padding:
+        28px 0;
+
+      color:
+        var(--muted);
+
+      font-size:
+        0.88rem;
+    }
+
+    .footer-inner {
+      display:
+        flex;
+
+      justify-content:
+        space-between;
+
+      gap:
+        20px;
+
+      flex-wrap:
+        wrap;
+    }
+
+    /* =========================================================
+       RESPONSIVE
+    ========================================================= */
+
+    @media (max-width: 850px) {
+
+      .nav-links {
+        display:
+          none;
+      }
+
+      .cards,
+      .writing-grid {
+        grid-template-columns:
+          1fr;
+      }
+
+      .geminio-grid {
+        grid-template-columns:
+          1fr;
+      }
+
+      .hero {
+        min-height:
+          78vh;
+
+        padding:
+          80px 0;
+      }
+
+      .geminio {
+        padding:
+          30px 24px;
+      }
+    }
+
+    @media (max-width: 520px) {
+
+      .container {
+        width:
+          calc(100% - 24px);
+      }
+
+      .section {
+        padding:
+          70px 0;
+      }
+
+      .hero h1 {
+        font-size:
+          3.1rem;
+      }
+
+      .hero-description {
+        font-size:
+          1rem;
+      }
+
+      .card,
+      .technology-box {
+        padding:
+          22px;
+      }
+
+      .button {
+        width:
+          100%;
+      }
+
+      .buttons {
+        width:
+          100%;
+      }
+
+      .footer-inner {
+        flex-direction:
+          column;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-    <div class="container">
-        <header>
-            <h1>Geminio OS Technical Documentation</h1>
-            <p class="subtitle">
-                Technical writing portfolio featuring API specs, deployment guides, system architecture, and QA reports for Geminio OS.
-            </p>
-        </header>
+  <!-- =======================================================
+       NAVIGATION
+  ======================================================== -->
 
-        <div class="grid">
-            <div class="card">
-                <h2>API Documentation</h2>
-                <p style="font-size: 0.85rem; color: #8b949e;">Detailed tRPC endpoints, authentication flows, and request/response models.</p>
-                <a href="API_DOCUMENTATION.pdf" target="_blank" class="card-link">View PDF &rarr;</a>
-            </div>
+  <header class="navbar">
 
-            <div class="card">
-                <h2>Capability Catalog</h2>
-                <p style="font-size: 0.85rem; color: #8b949e;">Full breakdown of platform features, modules, and engine capabilities.</p>
-                <a href="CAPABILITY_CATALOG.pdf" target="_blank" class="card-link">View PDF &rarr;</a>
-            </div>
+    <div class="container nav-container">
 
-            <div class="card">
-                <h2>Codebase Audit</h2>
-                <p style="font-size: 0.85rem; color: #8b949e;">Comprehensive analysis of codebase structure, dependencies, and strict type safety.</p>
-                <a href="CODEBASE_AUDIT (1).pdf" target="_blank" class="card-link">View PDF &rarr;</a>
-            </div>
+      <a href="#home" class="logo">
+        Christian <span>Ezenwa</span>
+      </a>
 
-            <div class="card">
-                <h2>Complete Documentation</h2>
-                <p style="font-size: 0.85rem; color: #8b949e;">Master technical manual combining all architectural and setup specifications.</p>
-                <a href="COMPLETE_DOCUMENTATION.pdf" target="_blank" class="card-link">View PDF &rarr;</a>
-            </div>
+      <nav class="nav-links">
 
-            <div class="card">
-                <h2>Deployment Guide</h2>
-                <p style="font-size: 0.85rem; color: #8b949e;">Step-by-step instructions for Docker, Kubernetes, and environment setup.</p>
-                <a href="DEPLOYMENT_GUIDE.pdf" target="_blank" class="card-link">View PDF &rarr;</a>
-            </div>
+        <a href="#about">About</a>
 
-            <div class="card">
-                <h2>Production Readiness</h2>
-                <p style="font-size: 0.85rem; color: #8b949e;">Security, encryption checks, scaling parameters, and monitoring benchmarks.</p>
-                <a href="PRODUCTION_READINESS (2).pdf" target="_blank" class="card-link">View PDF &rarr;</a>
-            </div>
+        <a href="#technologies">
+          Technologies
+        </a>
 
-            <div class="card">
-                <h2>Project Summary</h2>
-                <p style="font-size: 0.85rem; color: #8b949e;">Executive summary highlighting core objectives and key milestones.</p>
-                <a href="PROJECT_SUMMARY.pdf" target="_blank" class="card-link">View PDF &rarr;</a>
-            </div>
+        <a href="#projects">
+          Projects
+        </a>
 
-            <div class="card">
-                <h2>QA Test Report</h2>
-                <p style="font-size: 0.85rem; color: #8b949e;">Test suite coverage metrics, execution outcomes, and validation status.</p>
-                <a href="QA_TEST_REPORT (1).pdf" target="_blank" class="card-link">View PDF &rarr;</a>
-            </div>
-        </div>
+        <a href="#writing">
+          Writing
+        </a>
 
-        <footer>
-            <p>&copy; Geminio OS Documentation Portfolio | Hosted on Netlify</p>
-        </footer>
+        <a href="#contact">
+          Contact
+        </a>
+
+      </nav>
+
     </div>
 
-</body>
-  </html>
-  
+  </header>
+
+
+  <main id="home">
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section class="hero">
+
+      <div class="container hero-content">
+
+        <div class="status">
+          <span class="status-dot"></span>
+          Building • Writing • Exploring AI
+        </div>
+
+        <h1>
+          Hi, I'm Christian Ezenwa.
+          <br>
+          <span class="gradient-text">
+            I build and explain technology.
+          </span>
+        </h1>
+
+        <p class="hero-description">
+
+          I'm a Technical Writer and Mobile-First Developer
+          focused on automation, technical documentation,
+          AI-agent concepts, and practical software projects.
+
+          My work combines clear technical communication
+          with hands-on experimentation.
+
+        </p>
+
+        <div class="buttons">
+
+          <a
+            href="#projects"
+            class="button button-primary"
+          >
+            Explore My Work
+          </a>
+
+          <a
+            href="https://github.com/christianfever31-commits"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button"
+          >
+            View GitHub
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ABOUT
+    ====================================================== -->
+
+    <section
+      class="section"
+      id="about"
+    >
+
+      <div class="container">
+
+        <div class="section-label">
+          About Me
+        </div>
+
+        <h2>
+          Turning technical ideas into
+          understandable experiences.
+        </h2>
+
+        <p class="section-description">
+
+          I enjoy working at the intersection of software,
+          documentation, automation, and emerging AI
+          technologies.
+
+          I focus on understanding how systems work,
+          experimenting with practical solutions,
+          and communicating technical ideas clearly.
+
+        </p>
+
+
+        <div class="cards">
+
+          <article class="card">
+
+            <div class="card-icon">
+              ✍️
+            </div>
+
+            <h3>
+              Technical Writing
+            </h3>
+
+            <p>
+              Writing clear documentation, technical
+              explanations, tutorials, and developer-focused
+              content.
+            </p>
+
+          </article>
+
+
+          <article class="card">
+
+            <div class="card-icon">
+              ⚙️
+            </div>
+
+            <h3>
+              Automation
+            </h3>
+
+            <p>
+              Building Python-based tools and workflows
+              that explore automation, data processing,
+              and technical diagnostics.
+            </p>
+
+          </article>
+
+
+          <article class="card">
+
+            <div class="card-icon">
+              📱
+            </div>
+
+            <h3>
+              Mobile-First Development
+            </h3>
+
+            <p>
+              Experimenting with software development
+              from an Android-based Linux environment
+              using Termux.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TECHNOLOGIES
+    ====================================================== -->
+
+    <section
+      class="section"
+      id="technologies"
+    >
+
+      <div class="container">
+
+        <div class="section-label">
+          Technologies
+        </div>
+
+        <h2>
+          My Core Technology Stack
+        </h2>
+
+        <p class="section-description">
+
+          Technologies and technical areas represented
+          across my current projects, experiments,
+          and development workflow.
+
+        </p>
+
+
+        <div class="technology-box">
+
+          <h3>
+            Tools &amp; Technical Areas
+          </h3>
+
+          <div class="technology-list">
+
+            <span class="technology">
+              Python
+            </span>
+
+            <span class="technology">
+              Automation
+            </span>
+
+            <span class="technology">
+              Web Scraping
+            </span>
+
+            <span class="technology">
+              Financial Data
+            </span>
+
+            <span class="technology">
+              Termux
+            </span>
+
+            <span class="technology">
+              Android-based Linux
+            </span>
+
+            <span class="technology">
+              SEO Auditing
+            </span>
+
+            <span class="technology">
+              LLM Agent Function Calling
+            </span>
+
+            <span class="technology">
+              Technical Documentation
+            </span>
+
+            <span class="technology">
+              HTML
+            </span>
+
+            <span class="technology">
+              CSS
+            </span>
+
+            <span class="technology">
+              JavaScript
+            </span>
+
+            <span class="technology">
+              Git
+            </span>
+
+            <span class="technology">
+              GitHub
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         GEMINIO OS
+    ====================================================== -->
+
+    <section
+      class="section"
+      id="projects"
+    >
+
+      <div class="container">
+
+        <div class="section-label">
+          Featured Project
+        </div>
+
+        <h2>
+          Geminio OS
+        </h2>
+
+        <p class="section-description">
+
+          An ambitious AI software platform concept exploring
+          how intelligent agents can assist with software
+          creation, project workflows, automation, and
+          device interaction.
+
+        </p>
+
+
+        <div class="geminio">
+
+          <span class="geminio-badge">
+            ONGOING PROJECT
+          </span>
+
+          <h3>
+              
