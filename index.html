@@ -10,19 +10,95 @@
 
   <meta
     name="description"
-    content="Christian Ezenwa — Technical Writer and Mobile-First Developer. Explore Geminio OS, automation, technical documentation, SEO auditing, and AI-agent projects."
+    content="Ezenwa Christian Chimeremeze — Technical Writer, Full-Stack Developer, AI & Robotics Developer. Explore technical documentation, software architecture, Geminio OS, AI systems, automation, and robotics projects."
   >
 
-  <meta name="theme-color" content="#07111f">
+  <meta
+    name="author"
+    content="Ezenwa Christian Chimeremeze"
+  >
+
+  <meta
+    name="robots"
+    content="index, follow"
+  >
+
+  <meta
+    name="theme-color"
+    content="#07111f"
+  >
+
+  <link
+    rel="canonical"
+    href="https://geminio-os-technical-portfolio.netlify.app/"
+  >
+
+  <!-- Open Graph -->
+  <meta
+    property="og:title"
+    content="Ezenwa Christian Chimeremeze | Technical Writer & Full-Stack Developer"
+  >
+
+  <meta
+    property="og:description"
+    content="Technical Writer, Full-Stack Developer, AI & Robotics Developer focused on developer documentation, software architecture, AI systems, automation, and emerging robotics technologies."
+  >
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:url"
+    content="https://geminio-os-technical-portfolio.netlify.app/"
+  >
 
   <title>
-    Christian Ezenwa | Technical Writer & Mobile-First Developer
+    Ezenwa Christian Chimeremeze | Technical Writer & Developer
   </title>
 
+  <!-- ======================================================
+       PERSON / PROFESSIONAL IDENTITY STRUCTURED DATA
+  ======================================================= -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ezenwa Christian Chimeremeze",
+    "url": "https://geminio-os-technical-portfolio.netlify.app/",
+    "jobTitle": "Technical Writer and Full-Stack Developer",
+    "description": "Technical Writer, Full-Stack Developer, AI and Robotics Developer focused on developer documentation, software architecture, artificial intelligence, automation, and emerging robotics technologies.",
+    "sameAs": [
+      "https://github.com/christianfever31-commits",
+      "https://x.com/EzenwaC20005",
+      "https://medium.com/@ezenwachristianchimeremeze"
+    ],
+    "knowsAbout": [
+      "Technical Writing",
+      "Developer Documentation",
+      "Full-Stack Development",
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "APIs",
+      "Software Architecture",
+      "Artificial Intelligence",
+      "Automation",
+      "Robotics",
+      "Embedded Systems",
+      "Developer Experience",
+      "SEO"
+    ]
+  }
+  </script>
+
   <style>
-    /* =========================================================
+
+    /* ======================================================
        RESET
-    ========================================================= */
+    ======================================================= */
 
     * {
       margin: 0;
@@ -61,16 +137,6 @@
       display: block;
     }
 
-    button,
-    input,
-    textarea {
-      font: inherit;
-    }
-
-    /* =========================================================
-       VARIABLES
-    ========================================================= */
-
     :root {
       --background: #07111f;
       --background-soft: #0b1728;
@@ -85,16 +151,16 @@
 
       --purple: #8b91ff;
 
-      --border: rgba(255, 255, 255, 0.10);
+      --border: rgba(255,255,255,0.10);
 
       --max-width: 1150px;
 
       --radius: 22px;
     }
 
-    /* =========================================================
+    /* ======================================================
        GLOBAL
-    ========================================================= */
+    ======================================================= */
 
     .container {
       width: min(
@@ -107,9 +173,7 @@
 
     .section {
       padding: 100px 0;
-
-      border-top:
-        1px solid var(--border);
+      border-top: 1px solid var(--border);
     }
 
     .section-label {
@@ -145,7 +209,7 @@
     }
 
     .section-description {
-      max-width: 760px;
+      max-width: 780px;
 
       color: var(--muted);
 
@@ -154,9 +218,9 @@
       margin-bottom: 45px;
     }
 
-    /* =========================================================
+    /* ======================================================
        NAVIGATION
-    ========================================================= */
+    ======================================================= */
 
     .navbar {
       position: sticky;
@@ -168,7 +232,7 @@
       backdrop-filter: blur(18px);
 
       background:
-        rgba(7, 17, 31, 0.82);
+        rgba(7,17,31,0.84);
 
       border-bottom:
         1px solid var(--border);
@@ -206,30 +270,24 @@
       font-size: 0.92rem;
     }
 
-    .nav-links a {
-      transition:
-        color 0.2s ease;
-    }
-
     .nav-links a:hover {
       color: var(--text);
     }
 
-    /* =========================================================
+    /* ======================================================
        HERO
-    ========================================================= */
+    ======================================================= */
 
     .hero {
       position: relative;
 
-      min-height: 85vh;
+      min-height: 88vh;
 
       display: flex;
 
       align-items: center;
 
-      padding:
-        100px 0;
+      padding: 100px 0;
 
       overflow: hidden;
     }
@@ -239,19 +297,17 @@
 
       position: absolute;
 
-      width: 500px;
-
-      height: 500px;
+      width: 520px;
+      height: 520px;
 
       border-radius: 50%;
 
       background:
-        rgba(84, 225, 208, 0.08);
+        rgba(84,225,208,0.08);
 
-      filter: blur(80px);
+      filter: blur(90px);
 
-      top: -220px;
-
+      top: -240px;
       right: -180px;
 
       pointer-events: none;
@@ -262,19 +318,17 @@
 
       position: absolute;
 
-      width: 450px;
-
-      height: 450px;
+      width: 480px;
+      height: 480px;
 
       border-radius: 50%;
 
       background:
-        rgba(139, 145, 255, 0.08);
+        rgba(139,145,255,0.08);
 
-      filter: blur(90px);
+      filter: blur(100px);
 
-      bottom: -250px;
-
+      bottom: -260px;
       left: -180px;
 
       pointer-events: none;
@@ -282,7 +336,6 @@
 
     .hero-content {
       position: relative;
-
       z-index: 2;
     }
 
@@ -293,17 +346,16 @@
 
       gap: 9px;
 
-      padding:
-        7px 13px;
+      padding: 7px 13px;
 
       border:
         1px solid
-        rgba(84, 225, 208, 0.25);
+        rgba(84,225,208,0.25);
 
       border-radius: 999px;
 
       background:
-        rgba(84, 225, 208, 0.06);
+        rgba(84,225,208,0.06);
 
       color: var(--accent);
 
@@ -316,7 +368,6 @@
 
     .status-dot {
       width: 7px;
-
       height: 7px;
 
       border-radius: 50%;
@@ -325,7 +376,7 @@
     }
 
     .hero h1 {
-      max-width: 950px;
+      max-width: 1000px;
 
       font-size: clamp(
         3rem,
@@ -335,7 +386,7 @@
 
       line-height: 0.98;
 
-      margin-bottom: 28px;
+      margin-bottom: 30px;
     }
 
     .gradient-text {
@@ -354,8 +405,22 @@
       color: transparent;
     }
 
+    .hero-role {
+      font-size: clamp(
+        1rem,
+        2vw,
+        1.25rem
+      );
+
+      color: #dce5f1;
+
+      font-weight: 700;
+
+      margin-bottom: 18px;
+    }
+
     .hero-description {
-      max-width: 760px;
+      max-width: 780px;
 
       color: var(--muted);
 
@@ -385,8 +450,7 @@
 
       min-height: 48px;
 
-      padding:
-        0 19px;
+      padding: 0 19px;
 
       border-radius: 12px;
 
@@ -423,15 +487,59 @@
         #72eadc;
     }
 
-    /* =========================================================
-       ABOUT
-    ========================================================= */
+    /* ======================================================
+       PROFESSIONAL IDENTITY
+    ======================================================= */
+
+    .identity-grid {
+      display: grid;
+
+      grid-template-columns:
+        1.2fr 0.8fr;
+
+      gap: 22px;
+    }
+
+    .identity-card {
+      padding: 32px;
+
+      border:
+        1px solid var(--border);
+
+      border-radius:
+        var(--radius);
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(18,36,59,0.9),
+          rgba(14,27,46,0.9)
+        );
+    }
+
+    .identity-card h3 {
+      font-size: 1.3rem;
+
+      margin-bottom: 12px;
+    }
+
+    .identity-card p {
+      color: var(--muted);
+    }
+
+    .identity-card strong {
+      color: var(--text);
+    }
+
+    /* ======================================================
+       AREAS OF EXPERTISE
+    ======================================================= */
 
     .cards {
       display: grid;
 
       grid-template-columns:
-        repeat(3, 1fr);
+        repeat(3,1fr);
 
       gap: 18px;
     }
@@ -448,13 +556,9 @@
       background:
         linear-gradient(
           145deg,
-          rgba(18, 36, 59, 0.85),
-          rgba(14, 27, 46, 0.85)
+          rgba(18,36,59,0.85),
+          rgba(14,27,46,0.85)
         );
-
-      box-shadow:
-        0 20px 60px
-        rgba(0, 0, 0, 0.12);
     }
 
     .card-icon {
@@ -475,9 +579,9 @@
       font-size: 0.96rem;
     }
 
-    /* =========================================================
+    /* ======================================================
        TECHNOLOGIES
-    ========================================================= */
+    ======================================================= */
 
     .technology-box {
       padding: 32px;
@@ -515,7 +619,7 @@
         999px;
 
       background:
-        rgba(255, 255, 255, 0.035);
+        rgba(255,255,255,0.035);
 
       color:
         #dce5f1;
@@ -524,9 +628,9 @@
         0.9rem;
     }
 
-    /* =========================================================
+    /* ======================================================
        GEMINIO OS
-    ========================================================= */
+    ======================================================= */
 
     .geminio {
       position: relative;
@@ -537,7 +641,7 @@
 
       border:
         1px solid
-        rgba(84, 225, 208, 0.2);
+        rgba(84,225,208,0.2);
 
       border-radius:
         28px;
@@ -587,11 +691,7 @@
 
     .geminio h3 {
       font-size:
-        clamp(
-          2rem,
-          5vw,
-          3.5rem
-        );
+        clamp(2rem,5vw,3.5rem);
 
       margin-bottom:
         15px;
@@ -599,7 +699,7 @@
 
     .geminio-description {
       max-width:
-        780px;
+        800px;
 
       color:
         var(--muted);
@@ -609,7 +709,8 @@
     }
 
     .geminio-grid {
-      display: grid;
+      display:
+        grid;
 
       grid-template-columns:
         1.25fr 0.75fr;
@@ -696,13 +797,36 @@
         0.93rem;
     }
 
-    /* =========================================================
+    /* ======================================================
        OTHER PROJECTS
-    ========================================================= */
+    ======================================================= */
+
+    .project-grid {
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap:
+        18px;
+    }
 
     .project-card {
+      padding:
+        27px;
+
       min-height:
         230px;
+
+      border:
+        1px solid var(--border);
+
+      border-radius:
+        var(--radius);
+
+      background:
+        var(--surface);
     }
 
     .project-card h3 {
@@ -710,16 +834,38 @@
         10px;
     }
 
-    /* =========================================================
+    .project-card p {
+      color:
+        var(--muted);
+
+      font-size:
+        0.95rem;
+
+      margin-bottom:
+        20px;
+    }
+
+    .project-link {
+      color:
+        var(--accent);
+
+      font-weight:
+        750;
+
+      font-size:
+        0.9rem;
+    }
+
+    /* ======================================================
        WRITING
-    ========================================================= */
+    ======================================================= */
 
     .writing-grid {
       display:
         grid;
 
       grid-template-columns:
-        repeat(3, 1fr);
+        repeat(3,1fr);
 
       gap:
         18px;
@@ -749,9 +895,9 @@
         var(--muted);
     }
 
-    /* =========================================================
+    /* ======================================================
        CONTACT
-    ========================================================= */
+    ======================================================= */
 
     .contact {
       text-align:
@@ -763,7 +909,7 @@
 
     .contact-description {
       max-width:
-        700px;
+        720px;
 
       margin:
         0 auto 30px;
@@ -775,9 +921,9 @@
         1.05rem;
     }
 
-    /* =========================================================
+    /* ======================================================
        FOOTER
-    ========================================================= */
+    ======================================================= */
 
     footer {
       border-top:
@@ -807,11 +953,11 @@
         wrap;
     }
 
-    /* =========================================================
+    /* ======================================================
        RESPONSIVE
-    ========================================================= */
+    ======================================================= */
 
-    @media (max-width: 850px) {
+    @media (max-width: 900px) {
 
       .nav-links {
         display:
@@ -819,7 +965,9 @@
       }
 
       .cards,
-      .writing-grid {
+      .project-grid,
+      .writing-grid,
+      .identity-grid {
         grid-template-columns:
           1fr;
       }
@@ -857,7 +1005,7 @@
 
       .hero h1 {
         font-size:
-          3.1rem;
+          3.15rem;
       }
 
       .hero-description {
@@ -866,7 +1014,10 @@
       }
 
       .card,
-      .technology-box {
+      .technology-box,
+      .identity-card,
+      .project-card,
+      .writing-item {
         padding:
           22px;
       }
@@ -886,26 +1037,35 @@
           column;
       }
     }
+
   </style>
 </head>
 
 <body>
 
-  <!-- =======================================================
+  <!-- ======================================================
        NAVIGATION
-  ======================================================== -->
+  ======================================================= -->
 
   <header class="navbar">
 
     <div class="container nav-container">
 
-      <a href="#home" class="logo">
-        Christian <span>Ezenwa</span>
+      <a
+        href="#home"
+        class="logo"
+        aria-label="Ezenwa Christian Chimeremeze home"
+      >
+        Ezenwa <span>Christian</span>
       </a>
 
       <nav class="nav-links">
 
         <a href="#about">About</a>
+
+        <a href="#expertise">
+          Expertise
+        </a>
 
         <a href="#technologies">
           Technologies
@@ -932,37 +1092,57 @@
 
   <main id="home">
 
-    <!-- =====================================================
+
+    <!-- ====================================================
          HERO
-    ====================================================== -->
+    ===================================================== -->
 
     <section class="hero">
 
       <div class="container hero-content">
 
         <div class="status">
+
           <span class="status-dot"></span>
-          Building • Writing • Exploring AI
+
+          Building • Writing • Engineering • Exploring AI
+
         </div>
 
+
+        <div class="hero-role">
+
+          Technical Writer · Full-Stack Developer · AI & Robotics
+
+        </div>
+
+
         <h1>
-          Hi, I'm Christian Ezenwa.
+
+          I'm Ezenwa Christian Chimeremeze.
+
           <br>
+
           <span class="gradient-text">
-            I build and explain technology.
+            I build technology and explain how it works.
           </span>
+
         </h1>
+
 
         <p class="hero-description">
 
-          I'm a Technical Writer and Mobile-First Developer
-          focused on automation, technical documentation,
-          AI-agent concepts, and practical software projects.
+          I’m a Technical Writer and Full-Stack Developer
+          focused on developer documentation, software
+          architecture, APIs, artificial intelligence,
+          automation, and emerging robotics technologies.
 
-          My work combines clear technical communication
-          with hands-on experimentation.
+          I combine hands-on software development with
+          technical communication to turn complex systems
+          into clear, practical, and understandable experiences.
 
         </p>
+
 
         <div class="buttons">
 
@@ -973,13 +1153,24 @@
             Explore My Work
           </a>
 
+
           <a
             href="https://github.com/christianfever31-commits"
             target="_blank"
             rel="noopener noreferrer"
             class="button"
           >
-            View GitHub
+            GitHub
+          </a>
+
+
+          <a
+            href="https://medium.com/@ezenwachristianchimeremeze"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button"
+          >
+            Medium
           </a>
 
         </div>
@@ -989,9 +1180,9 @@
     </section>
 
 
-    <!-- =====================================================
+    <!-- ====================================================
          ABOUT
-    ====================================================== -->
+    ===================================================== -->
 
     <section
       class="section"
@@ -1001,28 +1192,111 @@
       <div class="container">
 
         <div class="section-label">
-          About Me
+          Professional Identity
         </div>
 
+
         <h2>
-          Turning technical ideas into
-          understandable experiences.
+          Software engineering meets
+          technical communication.
         </h2>
+
 
         <p class="section-description">
 
-          I enjoy working at the intersection of software,
-          documentation, automation, and emerging AI
-          technologies.
+          My work sits at the intersection of software
+          development, technical writing, artificial
+          intelligence, automation, and robotics.
 
-          I focus on understanding how systems work,
-          experimenting with practical solutions,
-          and communicating technical ideas clearly.
+          I approach technology from both sides:
+          understanding how systems are designed and built,
+          while also focusing on how those systems can be
+          explained clearly to developers, technical teams,
+          and users.
+          
+        </p>
+
+
+        <div class="identity-grid">
+
+          <article class="identity-card">
+
+            <h3>
+              What I Do
+            </h3>
+
+            <p>
+
+              I write developer-focused documentation,
+              explore software architectures, build
+              full-stack applications and automation tools,
+              experiment with AI-assisted development,
+              and investigate robotics and embedded systems.
+
+            </p>
+
+          </article>
+
+
+          <article class="identity-card">
+
+            <h3>
+              My Approach
+            </h3>
+
+            <p>
+
+              <strong>
+                Understand → Build → Document → Improve.
+              </strong>
+
+              I believe strong technical communication
+              begins with understanding the underlying
+              technology.
+
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ====================================================
+         EXPERTISE
+    ===================================================== -->
+
+    <section
+      class="section"
+      id="expertise"
+    >
+
+      <div class="container">
+
+        <div class="section-label">
+          Expertise
+        </div>
+
+
+        <h2>
+          Areas I work across.
+        </h2>
+
+
+        <p class="section-description">
+
+          My professional interests combine communication,
+          engineering, intelligent systems, and practical
+          experimentation.
 
         </p>
 
 
         <div class="cards">
+
 
           <article class="card">
 
@@ -1035,9 +1309,78 @@
             </h3>
 
             <p>
-              Writing clear documentation, technical
-              explanations, tutorials, and developer-focused
+
+              Developer documentation, API documentation,
+              technical guides, tutorials, specifications,
+              system explanations, and developer experience
               content.
+
+            </p>
+
+          </article>
+
+
+          <article class="card">
+
+            <div class="card-icon">
+              💻
+            </div>
+
+            <h3>
+              Full-Stack Development
+            </h3>
+
+            <p>
+
+              Building and experimenting with web
+              applications, APIs, backend systems,
+              databases, frontend interfaces, and
+              software architecture.
+
+            </p>
+
+          </article>
+
+
+          <article class="card">
+
+            <div class="card-icon">
+              🧠
+            </div>
+
+            <h3>
+              AI & Intelligent Systems
+            </h3>
+
+            <p>
+
+              Exploring AI-assisted development,
+              AI agents, automation workflows,
+              intelligent software systems, and
+              practical AI applications.
+
+            </p>
+
+          </article>
+
+
+          <article class="card">
+
+            <div class="card-icon">
+              🤖
+            </div>
+
+            <h3>
+              Robotics & Embedded Systems
+            </h3>
+
+            <p>
+
+              Learning and developing robotics concepts
+              involving sensors, controllers, motors,
+              embedded systems, autonomous behavior,
+              and intelligent machines.
+
             </p>
 
           </article>
@@ -1054,9 +1397,11 @@
             </h3>
 
             <p>
-              Building Python-based tools and workflows
-              that explore automation, data processing,
-              and technical diagnostics.
+
+              Designing Python-based tools and workflows
+              for automation, data processing, technical
+              analysis, and software productivity.
+
             </p>
 
           </article>
@@ -1065,17 +1410,19 @@
           <article class="card">
 
             <div class="card-icon">
-              📱
+              🔎
             </div>
 
             <h3>
-              Mobile-First Development
+              SEO & Technical Auditing
             </h3>
 
             <p>
-              Experimenting with software development
-              from an Android-based Linux environment
-              using Termux.
+
+              Exploring automated technical SEO analysis,
+              website auditing, structured content,
+              and developer-oriented web diagnostics.
+
             </p>
 
           </article>
@@ -1087,9 +1434,9 @@
     </section>
 
 
-    <!-- =====================================================
+    <!-- ====================================================
          TECHNOLOGIES
-    ====================================================== -->
+    ===================================================== -->
 
     <section
       class="section"
@@ -1099,18 +1446,20 @@
       <div class="container">
 
         <div class="section-label">
-          Technologies
+          Technical Stack
         </div>
 
+
         <h2>
-          My Core Technology Stack
+          Technologies and technical areas.
         </h2>
+
 
         <p class="section-description">
 
-          Technologies and technical areas represented
-          across my current projects, experiments,
-          and development workflow.
+          Technologies I use, study, or apply across my
+          development, documentation, AI, automation,
+          and robotics projects.
 
         </p>
 
@@ -1118,8 +1467,9 @@
         <div class="technology-box">
 
           <h3>
-            Tools &amp; Technical Areas
+            Core Technologies
           </h3>
+
 
           <div class="technology-list">
 
@@ -1128,35 +1478,47 @@
             </span>
 
             <span class="technology">
-              Automation
+              JavaScript
             </span>
 
             <span class="technology">
-              Web Scraping
+              TypeScript
             </span>
 
             <span class="technology">
-              Financial Data
+              React
             </span>
 
             <span class="technology">
-              Termux
+              React Native
             </span>
 
             <span class="technology">
-              Android-based Linux
+              Node.js
             </span>
 
             <span class="technology">
-              SEO Auditing
+              Express.js
             </span>
 
             <span class="technology">
-              LLM Agent Function Calling
+              APIs
             </span>
 
             <span class="technology">
-              Technical Documentation
+              Firebase
+            </span>
+
+            <span class="technology">
+              MongoDB
+            </span>
+
+            <span class="technology">
+              Git
+            </span>
+
+            <span class="technology">
+              GitHub
             </span>
 
             <span class="technology">
@@ -1168,15 +1530,35 @@
             </span>
 
             <span class="technology">
-              JavaScript
+              AI Agents
             </span>
 
             <span class="technology">
-              Git
+              AI-Assisted Development
             </span>
 
             <span class="technology">
-              GitHub
+              Automation
+            </span>
+
+            <span class="technology">
+              Technical Documentation
+            </span>
+
+            <span class="technology">
+              Developer Experience
+            </span>
+
+            <span class="technology">
+              SEO Auditing
+            </span>
+
+            <span class="technology">
+              Robotics
+            </span>
+
+            <span class="technology">
+              Embedded Systems
             </span>
 
           </div>
@@ -1188,9 +1570,9 @@
     </section>
 
 
-    <!-- =====================================================
+    <!-- ====================================================
          GEMINIO OS
-    ====================================================== -->
+    ===================================================== -->
 
     <section
       class="section"
@@ -1203,16 +1585,18 @@
           Featured Project
         </div>
 
+
         <h2>
           Geminio OS
         </h2>
 
+
         <p class="section-description">
 
-          An ambitious AI software platform concept exploring
-          how intelligent agents can assist with software
-          creation, project workflows, automation, and
-          device interaction.
+          An AI-first software platform concept exploring
+          intelligent assistance across software development,
+          productivity, automation, learning, and device
+          workflows.
 
         </p>
 
@@ -1223,27 +1607,83 @@
             ONGOING PROJECT
           </span>
 
-                   <h3>Geminio OS Architecture</h3>
+
+          <h3>
+            Building an AI-powered
+            software ecosystem.
+          </h3>
+
 
           <p class="geminio-description">
-            A full-stack, AI-driven development ecosystem featuring automated technical specification generation, strict type-safe APIs, and isolated execution engines.
+
+            Geminio OS explores how AI can become an
+            intelligent layer across the software development
+            lifecycle — from understanding requirements and
+            creating projects to generating code, analyzing
+            systems, debugging, testing, deployment, and
+            optimization.
+
           </p>
+
 
           <div class="geminio-grid">
 
+
             <ul class="feature-list">
-              <li>Autonomous task orchestrator and code generator</li>
-              <li>Zero TypeScript errors across client and server layers</li>
-              <li>Integrated tRPC endpoints with end-to-end data validation</li>
-              <li>Comprehensive technical documentation and audit reports</li>
+
+              <li>
+                AI-assisted software development
+              </li>
+
+              <li>
+                Product and feature architecture
+              </li>
+
+              <li>
+                Developer documentation
+              </li>
+
+              <li>
+                API and technical specifications
+              </li>
+
+              <li>
+                AI Builder concepts
+              </li>
+
+              <li>
+                AI Phone Assistant concepts
+              </li>
+
+              <li>
+                Automation workflows
+              </li>
+
+              <li>
+                Software analysis and debugging
+              </li>
+
+              <li>
+                Testing and deployment workflows
+              </li>
+
             </ul>
 
+
             <div class="project-status">
-              <strong>Documentation Hub</strong>
-              <p>Explore full architectural breakdowns, deployment steps, and QA reports in the project documents.</p>
-              <div style="margin-top: 15px;">
-                <a href="API_DOCUMENTATION.pdf" target="_blank" class="button button-primary" style="font-size: 0.85rem; min-height: 38px; width: 100%; text-align: center;">View Documentation PDF</a>
-              </div>
+
+              <strong>
+                Project Focus
+              </strong>
+
+              <p>
+
+                AI + Software Engineering + Automation
+                + Developer Experience + Intelligent
+                Device Interaction.
+
+              </p>
+
             </div>
 
           </div>
@@ -1255,9 +1695,121 @@
     </section>
 
 
-    <!-- =====================================================
-         TECHNICAL WRITING
-    ====================================================== -->
+    <!-- ====================================================
+         OTHER PROJECTS
+    ===================================================== -->
+
+    <section class="section">
+
+      <div class="container">
+
+        <div class="section-label">
+          Selected Work
+        </div>
+
+
+        <h2>
+          Projects and experiments.
+        </h2>
+
+
+        <p class="section-description">
+
+          Practical projects that demonstrate my interests
+          across automation, software development, technical
+          analysis, and intelligent systems.
+
+        </p>
+
+
+        <div class="project-grid">
+
+
+          <article class="project-card">
+
+            <h3>
+              SEO Automation
+            </h3>
+
+            <p>
+
+              Exploring automated technical SEO analysis
+              and developer-oriented website auditing
+              workflows using software tools.
+
+            </p>
+
+            <a
+              class="project-link"
+              href="https://github.com/christianfever31-commits"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on GitHub →
+            </a>
+
+          </article>
+
+
+          <article class="project-card">
+
+            <h3>
+              AI & Automation Systems
+            </h3>
+
+            <p>
+
+              Experiments involving AI agents, automation,
+              function calling, data workflows, and
+              intelligent software behavior.
+
+            </p>
+
+            <a
+              class="project-link"
+              href="https://github.com/christianfever31-commits"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Explore Projects →
+            </a>
+
+          </article>
+
+
+          <article class="project-card">
+
+            <h3>
+              Robotics Research
+            </h3>
+
+            <p>
+
+              Ongoing exploration of autonomous robotics,
+              embedded systems, sensors, motor control,
+              intelligent machines, and AI-powered robots.
+
+            </p>
+
+            <a
+              class="project-link"
+              href="#contact"
+            >
+              Learn More →
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ====================================================
+         WRITING
+    ===================================================== -->
 
     <section
       class="section"
@@ -1270,35 +1822,91 @@
           Technical Writing
         </div>
 
+
         <h2>
-          Documentation &amp; Guides
+          I don't just build systems.
+          I document them.
         </h2>
+
 
         <p class="section-description">
 
-          A collection of developer manuals, deployment specifications, and technical architecture guides.
+          My technical writing focuses on helping developers
+          understand systems, APIs, workflows, architectures,
+          and practical engineering concepts.
 
         </p>
 
+
         <div class="writing-grid">
 
-          <article class="writing-item">
-            <h3>API Documentation</h3>
-            <p style="margin-bottom: 15px;">Detailed spec sheets covering authentication flows, tRPC protocols, and payload schemas.</p>
-            <a href="API_DOCUMENTATION.pdf" target="_blank" style="color: var(--accent); font-weight: 700;">Read PDF &rarr;</a>
-          </article>
 
           <article class="writing-item">
-            <h3>Deployment Guide</h3>
-            <p style="margin-bottom: 15px;">Step-by-step setup covering containerization, environment variables, and cloud publishing.</p>
-            <a href="DEPLOYMENT_GUIDE.pdf" target="_blank" style="color: var(--accent); font-weight: 700;">Read PDF &rarr;</a>
+
+            <h3>
+              Developer Documentation
+            </h3>
+
+            <p>
+
+              Clear documentation designed to help developers
+              understand, integrate, and work with technical
+              systems.
+
+            </p>
+
           </article>
 
+
           <article class="writing-item">
-            <h3>QA Test Report</h3>
-            <p style="margin-bottom: 15px;">Comprehensive coverage breakdown, unit execution logs, and validation results.</p>
-            <a href="QA_TEST_REPORT.pdf" target="_blank" style="color: var(--accent); font-weight: 700;">Read PDF &rarr;</a>
+
+            <h3>
+              Technical Tutorials
+            </h3>
+
+            <p>
+
+              Practical explanations that turn technical
+              concepts into structured, understandable
+              learning experiences.
+
+            </p>
+
           </article>
+
+
+          <article class="writing-item">
+
+            <h3>
+              AI & Software Engineering
+            </h3>
+
+            <p>
+
+              Writing and research around AI systems,
+              automation, developer workflows, software
+              architecture, and emerging technologies.
+
+            </p>
+
+          </article>
+
+        </div>
+
+
+        <div
+          class="buttons"
+          style="margin-top:30px;"
+        >
+
+          <a
+            href="https://medium.com/@ezenwachristianchimeremeze"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button button-primary"
+          >
+            Read My Writing
+          </a>
 
         </div>
 
@@ -1307,9 +1915,9 @@
     </section>
 
 
-    <!-- =====================================================
+    <!-- ====================================================
          CONTACT
-    ====================================================== -->
+    ===================================================== -->
 
     <section
       class="section contact"
@@ -1319,26 +1927,60 @@
       <div class="container">
 
         <div class="section-label">
-          Get In Touch
+          Contact
         </div>
 
+
         <h2>
-          Let's Build Together
+          Let's build and explain
+          better technology.
         </h2>
 
+
         <p class="contact-description">
-          Open for technical writing roles, developer opportunities, and AI system engineering collaborations.
+
+          I’m interested in opportunities involving
+          technical writing, developer documentation,
+          software development, AI systems, automation,
+          and emerging robotics technologies.
+
         </p>
 
-        <div class="buttons" style="justify-content: center;">
+
+        <div
+          class="buttons"
+          style="justify-content:center;"
+        >
+
           <a
             href="https://github.com/christianfever31-commits"
             target="_blank"
             rel="noopener noreferrer"
             class="button button-primary"
           >
-            Connect on GitHub
+            GitHub
           </a>
+
+
+          <a
+            href="https://medium.com/@ezenwachristianchimeremeze"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button"
+          >
+            Medium
+          </a>
+
+
+          <a
+            href="https://x.com/EzenwaC20005"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button"
+          >
+            X
+          </a>
+
         </div>
 
       </div>
@@ -1348,17 +1990,21 @@
   </main>
 
 
-  <!-- =======================================================
+  <!-- ======================================================
        FOOTER
-  ======================================================== -->
+  ======================================================= -->
 
   <footer>
 
     <div class="container footer-inner">
 
-      <p>&copy; 2026 Christian Ezenwa. All rights reserved.</p>
+      <div>
+        © 2026 Ezenwa Christian Chimeremeze.
+      </div>
 
-      <p>Mobile-First Developer &amp; Technical Writer</p>
+      <div>
+        Technical Writer · Full-Stack Developer · AI & Robotics
+      </div>
 
     </div>
 
@@ -1366,3 +2012,5 @@
 
 </body>
 </html>
+
+          
