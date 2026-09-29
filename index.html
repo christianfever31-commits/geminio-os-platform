@@ -3,102 +3,82 @@
 <head>
   <meta charset="UTF-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>EZENWA CHRISTIAN CHIMEREMEZE | Technical Writer & Full-Stack Developer</title>
 
   <meta
     name="description"
-    content="Ezenwa Christian Chimeremeze — Technical Writer, Full-Stack Developer, AI & Robotics Developer. Explore technical documentation, software architecture, Geminio OS, AI systems, automation, and robotics projects."
+    content="Ezenwa Christian Chimeremeze is a Nigerian Technical Writer and Full-Stack Developer working across software development, AI, automation, edge AI, robotics, APIs, and developer documentation."
   >
 
   <meta
-    name="author"
-    content="Ezenwa Christian Chimeremeze"
+    name="keywords"
+    content="Ezenwa Christian Chimeremeze, Ezenwa Christian, Technical Writer, Full-Stack Developer, AI Developer, Robotics, Edge AI, Software Developer, Developer Documentation, Nigeria"
   >
 
-  <meta
-    name="robots"
-    content="index, follow"
-  >
+  <meta name="author" content="Ezenwa Christian Chimeremeze">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0b0f19">
 
-  <meta
-    name="theme-color"
-    content="#07111f"
-  >
-
-  <link
-    rel="canonical"
-    href="https://geminio-os-technical-portfolio.netlify.app/"
-  >
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://ezenwa-christian.netlify.app/">
 
   <!-- Open Graph -->
-  <meta
-    property="og:title"
-    content="Ezenwa Christian Chimeremeze | Technical Writer & Full-Stack Developer"
-  >
-
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="EZENWA CHRISTIAN CHIMEREMEZE | Technical Writer & Full-Stack Developer">
   <meta
     property="og:description"
-    content="Technical Writer, Full-Stack Developer, AI & Robotics Developer focused on developer documentation, software architecture, AI systems, automation, and emerging robotics technologies."
+    content="Technical Writer, Full-Stack Developer, and AI & Robotics Builder."
   >
+  <meta property="og:url" content="https://ezenwa-christian.netlify.app/">
+  <meta property="og:site_name" content="Ezenwa Christian Chimeremeze">
 
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="EZENWA CHRISTIAN CHIMEREMEZE">
   <meta
-    property="og:type"
-    content="website"
+    name="twitter:description"
+    content="Technical Writer, Full-Stack Developer, and AI & Robotics Builder."
   >
+  <meta name="twitter:creator" content="@EzenwaC20005">
 
-  <meta
-    property="og:url"
-    content="https://geminio-os-technical-portfolio.netlify.app/"
-  >
-
-  <title>
-    Ezenwa Christian Chimeremeze | Technical Writer & Developer
-  </title>
-
-  <!-- ======================================================
-       PERSON / PROFESSIONAL IDENTITY STRUCTURED DATA
-  ======================================================= -->
-
+  <!-- Person / Profile structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
+    "@type": "ProfilePage",
     "name": "Ezenwa Christian Chimeremeze",
-    "url": "https://geminio-os-technical-portfolio.netlify.app/",
-    "jobTitle": "Technical Writer and Full-Stack Developer",
-    "description": "Technical Writer, Full-Stack Developer, AI and Robotics Developer focused on developer documentation, software architecture, artificial intelligence, automation, and emerging robotics technologies.",
-    "sameAs": [
-      "https://github.com/christianfever31-commits",
-      "https://x.com/EzenwaC20005",
-      "https://medium.com/@ezenwachristianchimeremeze"
-    ],
-    "knowsAbout": [
-      "Technical Writing",
-      "Developer Documentation",
-      "Full-Stack Development",
-      "Python",
-      "JavaScript",
-      "TypeScript",
-      "APIs",
-      "Software Architecture",
-      "Artificial Intelligence",
-      "Automation",
-      "Robotics",
-      "Embedded Systems",
-      "Developer Experience",
-      "SEO"
-    ]
+    "url": "https://ezenwa-christian.netlify.app/",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Ezenwa Christian Chimeremeze",
+      "alternateName": "Ezenwa Christian",
+      "jobTitle": "Technical Writer and Full-Stack Developer",
+      "description": "Nigerian Technical Writer and Full-Stack Developer working across software development, artificial intelligence, automation, edge AI, robotics, APIs, and developer documentation.",
+      "url": "https://ezenwa-christian.netlify.app/",
+      "sameAs": [
+        "https://github.com/ezenwachristianchimeremeze",
+        "https://ezenwachristianchimeremeze.medium.com/",
+        "https://x.com/EzenwaC20005"
+      ]
+    }
   }
   </script>
 
   <style>
-
-    /* ======================================================
-       RESET
-    ======================================================= */
+    :root {
+      --bg: #080b12;
+      --bg-soft: #0e131d;
+      --card: #111722;
+      --card-hover: #151d2a;
+      --text: #f4f7fb;
+      --muted: #a9b3c2;
+      --accent: #66b3ff;
+      --accent-soft: rgba(102, 179, 255, 0.12);
+      --border: rgba(255, 255, 255, 0.09);
+      --max-width: 1120px;
+    }
 
     * {
       margin: 0;
@@ -121,10 +101,16 @@
         Arial,
         sans-serif;
 
-      background: #07111f;
-      color: #f5f7fb;
+      background:
+        radial-gradient(
+          circle at top right,
+          rgba(102, 179, 255, 0.08),
+          transparent 35%
+        ),
+        var(--bg);
+
+      color: var(--text);
       line-height: 1.7;
-      overflow-x: hidden;
     }
 
     a {
@@ -137,123 +123,39 @@
       display: block;
     }
 
-    :root {
-      --background: #07111f;
-      --background-soft: #0b1728;
-      --surface: #0e1b2e;
-      --surface-light: #12243b;
-
-      --text: #f5f7fb;
-      --muted: #a7b4c7;
-
-      --accent: #54e1d0;
-      --accent-dark: #24b9aa;
-
-      --purple: #8b91ff;
-
-      --border: rgba(255,255,255,0.10);
-
-      --max-width: 1150px;
-
-      --radius: 22px;
-    }
-
-    /* ======================================================
-       GLOBAL
-    ======================================================= */
-
     .container {
-      width: min(
-        var(--max-width),
-        calc(100% - 32px)
-      );
-
-      margin: 0 auto;
+      width: min(92%, var(--max-width));
+      margin: auto;
     }
 
-    .section {
-      padding: 100px 0;
-      border-top: 1px solid var(--border);
-    }
+    /* Navigation */
 
-    .section-label {
-      color: var(--accent);
-
-      text-transform: uppercase;
-
-      letter-spacing: 0.16em;
-
-      font-size: 0.78rem;
-
-      font-weight: 800;
-
-      margin-bottom: 12px;
-    }
-
-    h1,
-    h2,
-    h3 {
-      letter-spacing: -0.035em;
-    }
-
-    h2 {
-      font-size: clamp(
-        2rem,
-        5vw,
-        3.5rem
-      );
-
-      line-height: 1.08;
-
-      margin-bottom: 20px;
-    }
-
-    .section-description {
-      max-width: 780px;
-
-      color: var(--muted);
-
-      font-size: 1.05rem;
-
-      margin-bottom: 45px;
-    }
-
-    /* ======================================================
-       NAVIGATION
-    ======================================================= */
-
-    .navbar {
+    header {
       position: sticky;
-
       top: 0;
+      z-index: 1000;
 
-      z-index: 100;
+      background: rgba(8, 11, 18, 0.86);
+      backdrop-filter: blur(14px);
 
-      backdrop-filter: blur(18px);
-
-      background:
-        rgba(7,17,31,0.84);
-
-      border-bottom:
-        1px solid var(--border);
+      border-bottom: 1px solid var(--border);
     }
 
-    .nav-container {
-      min-height: 72px;
+    nav {
+      min-height: 74px;
 
       display: flex;
-
       align-items: center;
-
       justify-content: space-between;
+
+      gap: 30px;
     }
 
     .logo {
-      font-size: 1.05rem;
-
-      font-weight: 850;
-
-      letter-spacing: -0.03em;
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
     }
 
     .logo span {
@@ -262,1427 +164,594 @@
 
     .nav-links {
       display: flex;
+      align-items: center;
+      gap: 25px;
 
-      gap: 24px;
+      list-style: none;
+    }
 
+    .nav-links a {
       color: var(--muted);
-
-      font-size: 0.92rem;
+      font-size: 0.93rem;
+      transition: 0.2s ease;
     }
 
     .nav-links a:hover {
       color: var(--text);
     }
 
-    /* ======================================================
-       HERO
-    ======================================================= */
+    /* Hero */
 
     .hero {
-      position: relative;
-
       min-height: 88vh;
 
       display: flex;
-
       align-items: center;
 
-      padding: 100px 0;
-
-      overflow: hidden;
-    }
-
-    .hero::before {
-      content: "";
-
-      position: absolute;
-
-      width: 520px;
-      height: 520px;
-
-      border-radius: 50%;
-
-      background:
-        rgba(84,225,208,0.08);
-
-      filter: blur(90px);
-
-      top: -240px;
-      right: -180px;
-
-      pointer-events: none;
-    }
-
-    .hero::after {
-      content: "";
-
-      position: absolute;
-
-      width: 480px;
-      height: 480px;
-
-      border-radius: 50%;
-
-      background:
-        rgba(139,145,255,0.08);
-
-      filter: blur(100px);
-
-      bottom: -260px;
-      left: -180px;
-
-      pointer-events: none;
+      padding: 100px 0 80px;
     }
 
     .hero-content {
-      position: relative;
-      z-index: 2;
+      max-width: 850px;
     }
 
-    .status {
-      display: inline-flex;
-
-      align-items: center;
-
-      gap: 9px;
+    .eyebrow {
+      display: inline-block;
 
       padding: 7px 13px;
+      margin-bottom: 25px;
 
-      border:
-        1px solid
-        rgba(84,225,208,0.25);
-
+      border: 1px solid var(--border);
       border-radius: 999px;
 
-      background:
-        rgba(84,225,208,0.06);
+      background: var(--accent-soft);
 
       color: var(--accent);
-
       font-size: 0.82rem;
-
-      font-weight: 750;
-
-      margin-bottom: 25px;
-    }
-
-    .status-dot {
-      width: 7px;
-      height: 7px;
-
-      border-radius: 50%;
-
-      background: var(--accent);
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
     }
 
     .hero h1 {
-      max-width: 1000px;
-
-      font-size: clamp(
-        3rem,
-        8vw,
-        6.5rem
-      );
+      font-size: clamp(2.5rem, 7vw, 5.8rem);
 
       line-height: 0.98;
+      letter-spacing: -0.055em;
 
-      margin-bottom: 30px;
+      margin-bottom: 28px;
     }
 
-    .gradient-text {
-      background:
-        linear-gradient(
-          100deg,
-          #ffffff,
-          var(--accent),
-          var(--purple)
-        );
-
-      -webkit-background-clip: text;
-
-      background-clip: text;
-
-      color: transparent;
+    .hero h1 span {
+      color: var(--accent);
     }
 
-    .hero-role {
-      font-size: clamp(
-        1rem,
-        2vw,
-        1.25rem
-      );
+    .hero-title {
+      font-size: clamp(1.25rem, 3vw, 1.8rem);
 
-      color: #dce5f1;
+      font-weight: 600;
 
-      font-weight: 700;
-
-      margin-bottom: 18px;
+      margin-bottom: 22px;
     }
 
     .hero-description {
-      max-width: 780px;
+      max-width: 760px;
 
       color: var(--muted);
 
-      font-size: clamp(
-        1.05rem,
-        2vw,
-        1.22rem
-      );
-
-      margin-bottom: 35px;
+      font-size: 1.08rem;
     }
 
-    .buttons {
+    .hero-actions {
       display: flex;
-
       flex-wrap: wrap;
+      gap: 14px;
 
-      gap: 12px;
+      margin-top: 35px;
     }
 
     .button {
       display: inline-flex;
-
       align-items: center;
-
       justify-content: center;
 
-      min-height: 48px;
+      padding: 12px 20px;
 
-      padding: 0 19px;
+      border-radius: 9px;
 
-      border-radius: 12px;
+      border: 1px solid var(--border);
 
-      border:
-        1px solid var(--border);
+      font-weight: 700;
 
-      background:
-        var(--surface);
-
-      font-weight: 750;
-
-      transition:
-        transform 0.2s ease,
-        background 0.2s ease;
-    }
-
-    .button:hover {
-      transform:
-        translateY(-2px);
+      transition: 0.2s ease;
     }
 
     .button-primary {
-      background:
-        var(--accent);
-
-      color: #061014;
-
-      border-color:
-        var(--accent);
+      background: var(--text);
+      color: var(--bg);
     }
 
-    .button-primary:hover {
-      background:
-        #72eadc;
+    .button-secondary {
+      color: var(--text);
+      background: transparent;
     }
 
-    /* ======================================================
-       PROFESSIONAL IDENTITY
-    ======================================================= */
-
-    .identity-grid {
-      display: grid;
-
-      grid-template-columns:
-        1.2fr 0.8fr;
-
-      gap: 22px;
+    .button:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
     }
 
-    .identity-card {
-      padding: 32px;
+    /* Sections */
 
-      border:
-        1px solid var(--border);
-
-      border-radius:
-        var(--radius);
-
-      background:
-        linear-gradient(
-          145deg,
-          rgba(18,36,59,0.9),
-          rgba(14,27,46,0.9)
-        );
+    section {
+      padding: 100px 0;
     }
 
-    .identity-card h3 {
-      font-size: 1.3rem;
-
-      margin-bottom: 12px;
+    .section-heading {
+      margin-bottom: 45px;
     }
 
-    .identity-card p {
+    .section-heading .small-title {
+      color: var(--accent);
+
+      font-size: 0.82rem;
+      font-weight: 800;
+
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+
+      margin-bottom: 8px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(2rem, 5vw, 3rem);
+
+      letter-spacing: -0.035em;
+    }
+
+    .section-heading p {
+      max-width: 700px;
+
       color: var(--muted);
+
+      margin-top: 12px;
     }
 
-    .identity-card strong {
+    /* About */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+
+      gap: 50px;
+    }
+
+    .about-text p {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .about-text strong {
       color: var(--text);
     }
 
-    /* ======================================================
-       AREAS OF EXPERTISE
-    ======================================================= */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
 
-    .cards {
+      margin-top: 25px;
+    }
+
+    .skill {
+      padding: 7px 11px;
+
+      border: 1px solid var(--border);
+      border-radius: 7px;
+
+      background: var(--card);
+
+      color: var(--muted);
+
+      font-size: 0.85rem;
+    }
+
+    /* Work */
+
+    .projects {
       display: grid;
 
-      grid-template-columns:
-        repeat(3,1fr);
+      grid-template-columns: repeat(3, 1fr);
 
-      gap: 18px;
+      gap: 20px;
     }
 
-    .card {
+    .project {
       padding: 27px;
 
-      border:
-        1px solid var(--border);
+      border: 1px solid var(--border);
+      border-radius: 14px;
 
-      border-radius:
-        var(--radius);
+      background: var(--card);
 
-      background:
-        linear-gradient(
-          145deg,
-          rgba(18,36,59,0.85),
-          rgba(14,27,46,0.85)
-        );
+      transition: 0.25s ease;
     }
 
-    .card-icon {
-      font-size: 1.6rem;
+    .project:hover {
+      transform: translateY(-5px);
+      background: var(--card-hover);
+      border-color: rgba(102, 179, 255, 0.3);
+    }
+
+    .project-number {
+      color: var(--accent);
+
+      font-size: 0.8rem;
+      font-weight: 800;
+
+      margin-bottom: 18px;
+    }
+
+    .project h3 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+    }
+
+    .project p {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .project-link {
+      display: inline-block;
+
+      margin-top: 20px;
+
+      color: var(--accent);
+
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    /* Writing */
+
+    .writing-list {
+      display: grid;
+      gap: 15px;
+    }
+
+    .article {
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 25px;
+
+      padding: 22px;
+
+      border: 1px solid var(--border);
+      border-radius: 11px;
+
+      background: var(--card);
+    }
+
+    .article h3 {
+      font-size: 1.05rem;
+    }
+
+    .article p {
+      color: var(--muted);
+
+      margin-top: 5px;
+
+      font-size: 0.9rem;
+    }
+
+    .article a {
+      color: var(--accent);
+
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    /* Contact */
+
+    .contact-box {
+      padding: 50px;
+
+      border: 1px solid var(--border);
+      border-radius: 18px;
+
+      background:
+        radial-gradient(
+          circle at top right,
+          rgba(102, 179, 255, 0.1),
+          transparent 45%
+        ),
+        var(--card);
+    }
+
+    .contact-box h2 {
+      font-size: clamp(2rem, 5vw, 3.3rem);
+
+      letter-spacing: -0.04em;
 
       margin-bottom: 15px;
     }
 
-    .card h3 {
-      font-size: 1.15rem;
-
-      margin-bottom: 10px;
-    }
-
-    .card p {
+    .contact-box p {
       color: var(--muted);
 
-      font-size: 0.96rem;
+      max-width: 700px;
+
+      margin-bottom: 30px;
     }
 
-    /* ======================================================
-       TECHNOLOGIES
-    ======================================================= */
-
-    .technology-box {
-      padding: 32px;
-
-      border:
-        1px solid var(--border);
-
-      border-radius:
-        var(--radius);
-
-      background:
-        var(--surface);
-    }
-
-    .technology-box h3 {
-      margin-bottom: 20px;
-    }
-
-    .technology-list {
+    .social-links {
       display: flex;
-
       flex-wrap: wrap;
-
-      gap: 10px;
+      gap: 12px;
     }
 
-    .technology {
-      padding:
-        8px 13px;
+    .social-links a {
+      padding: 10px 15px;
 
-      border:
-        1px solid var(--border);
+      border: 1px solid var(--border);
+      border-radius: 8px;
 
-      border-radius:
-        999px;
+      color: var(--muted);
 
-      background:
-        rgba(255,255,255,0.035);
-
-      color:
-        #dce5f1;
-
-      font-size:
-        0.9rem;
+      transition: 0.2s ease;
     }
 
-    /* ======================================================
-       GEMINIO OS
-    ======================================================= */
-
-    .geminio {
-      position: relative;
-
-      overflow: hidden;
-
-      padding: 45px;
-
-      border:
-        1px solid
-        rgba(84,225,208,0.2);
-
-      border-radius:
-        28px;
-
-      background:
-        radial-gradient(
-          circle at 90% 5%,
-          rgba(139,145,255,0.14),
-          transparent 32%
-        ),
-
-        linear-gradient(
-          145deg,
-          #101e34,
-          #0a1425
-        );
+    .social-links a:hover {
+      color: var(--text);
+      border-color: var(--accent);
     }
 
-    .geminio-badge {
-      display: inline-block;
-
-      padding:
-        6px 11px;
-
-      border-radius:
-        999px;
-
-      background:
-        rgba(84,225,208,0.08);
-
-      color:
-        var(--accent);
-
-      border:
-        1px solid
-        rgba(84,225,208,0.2);
-
-      font-size:
-        0.78rem;
-
-      font-weight:
-        800;
-
-      margin-bottom:
-        18px;
-    }
-
-    .geminio h3 {
-      font-size:
-        clamp(2rem,5vw,3.5rem);
-
-      margin-bottom:
-        15px;
-    }
-
-    .geminio-description {
-      max-width:
-        800px;
-
-      color:
-        var(--muted);
-
-      font-size:
-        1.05rem;
-    }
-
-    .geminio-grid {
-      display:
-        grid;
-
-      grid-template-columns:
-        1.25fr 0.75fr;
-
-      gap:
-        25px;
-
-      margin-top:
-        35px;
-    }
-
-    .feature-list {
-      list-style:
-        none;
-
-      display:
-        grid;
-
-      gap:
-        12px;
-    }
-
-    .feature-list li {
-      position:
-        relative;
-
-      padding-left:
-        28px;
-
-      color:
-        #dbe4ef;
-    }
-
-    .feature-list li::before {
-      content:
-        "✓";
-
-      position:
-        absolute;
-
-      left:
-        0;
-
-      color:
-        var(--accent);
-
-      font-weight:
-        900;
-    }
-
-    .project-status {
-      padding:
-        25px;
-
-      border:
-        1px solid var(--border);
-
-      border-radius:
-        18px;
-
-      background:
-        rgba(0,0,0,0.12);
-    }
-
-    .project-status strong {
-      display:
-        block;
-
-      color:
-        var(--accent);
-
-      font-size:
-        1.2rem;
-
-      margin-bottom:
-        10px;
-    }
-
-    .project-status p {
-      color:
-        var(--muted);
-
-      font-size:
-        0.93rem;
-    }
-
-    /* ======================================================
-       OTHER PROJECTS
-    ======================================================= */
-
-    .project-grid {
-      display:
-        grid;
-
-      grid-template-columns:
-        repeat(3,1fr);
-
-      gap:
-        18px;
-    }
-
-    .project-card {
-      padding:
-        27px;
-
-      min-height:
-        230px;
-
-      border:
-        1px solid var(--border);
-
-      border-radius:
-        var(--radius);
-
-      background:
-        var(--surface);
-    }
-
-    .project-card h3 {
-      margin-bottom:
-        10px;
-    }
-
-    .project-card p {
-      color:
-        var(--muted);
-
-      font-size:
-        0.95rem;
-
-      margin-bottom:
-        20px;
-    }
-
-    .project-link {
-      color:
-        var(--accent);
-
-      font-weight:
-        750;
-
-      font-size:
-        0.9rem;
-    }
-
-    /* ======================================================
-       WRITING
-    ======================================================= */
-
-    .writing-grid {
-      display:
-        grid;
-
-      grid-template-columns:
-        repeat(3,1fr);
-
-      gap:
-        18px;
-    }
-
-    .writing-item {
-      padding:
-        27px;
-
-      border:
-        1px solid var(--border);
-
-      border-radius:
-        var(--radius);
-
-      background:
-        var(--surface);
-    }
-
-    .writing-item h3 {
-      margin-bottom:
-        10px;
-    }
-
-    .writing-item p {
-      color:
-        var(--muted);
-    }
-
-    /* ======================================================
-       CONTACT
-    ======================================================= */
-
-    .contact {
-      text-align:
-        center;
-
-      padding-bottom:
-        115px;
-    }
-
-    .contact-description {
-      max-width:
-        720px;
-
-      margin:
-        0 auto 30px;
-
-      color:
-        var(--muted);
-
-      font-size:
-        1.05rem;
-    }
-
-    /* ======================================================
-       FOOTER
-    ======================================================= */
+    /* Footer */
 
     footer {
-      border-top:
-        1px solid var(--border);
+      padding: 35px 0;
 
-      padding:
-        28px 0;
+      border-top: 1px solid var(--border);
 
-      color:
-        var(--muted);
+      color: var(--muted);
 
-      font-size:
-        0.88rem;
+      font-size: 0.88rem;
     }
 
-    .footer-inner {
-      display:
-        flex;
+    .footer-content {
+      display: flex;
 
-      justify-content:
-        space-between;
+      align-items: center;
+      justify-content: space-between;
 
-      gap:
-        20px;
-
-      flex-wrap:
-        wrap;
+      gap: 20px;
     }
 
-    /* ======================================================
-       RESPONSIVE
-    ======================================================= */
+    /* Responsive */
 
-    @media (max-width: 900px) {
+    @media (max-width: 850px) {
 
       .nav-links {
-        display:
-          none;
+        display: none;
       }
 
-      .cards,
-      .project-grid,
-      .writing-grid,
-      .identity-grid {
-        grid-template-columns:
-          1fr;
+      .about-grid {
+        grid-template-columns: 1fr;
       }
 
-      .geminio-grid {
-        grid-template-columns:
-          1fr;
+      .projects {
+        grid-template-columns: 1fr;
       }
 
       .hero {
-        min-height:
-          78vh;
-
-        padding:
-          80px 0;
-      }
-
-      .geminio {
-        padding:
-          30px 24px;
+        min-height: auto;
+        padding-top: 80px;
       }
     }
 
-    @media (max-width: 520px) {
+    @media (max-width: 600px) {
 
-      .container {
-        width:
-          calc(100% - 24px);
+      .logo {
+        font-size: 0.82rem;
       }
 
-      .section {
-        padding:
-          70px 0;
+      section {
+        padding: 75px 0;
+      }
+
+      .hero {
+        padding: 75px 0;
       }
 
       .hero h1 {
-        font-size:
-          3.15rem;
+        font-size: 2.8rem;
       }
 
       .hero-description {
-        font-size:
-          1rem;
+        font-size: 1rem;
       }
 
-      .card,
-      .technology-box,
-      .identity-card,
-      .project-card,
-      .writing-item {
-        padding:
-          22px;
+      .article {
+        flex-direction: column;
+        align-items: flex-start;
       }
 
-      .button {
-        width:
-          100%;
+      .contact-box {
+        padding: 30px 22px;
       }
 
-      .buttons {
-        width:
-          100%;
-      }
-
-      .footer-inner {
-        flex-direction:
-          column;
+      .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
       }
     }
-
   </style>
 </head>
 
 <body>
 
-  <!-- ======================================================
-       NAVIGATION
-  ======================================================= -->
+  <!-- Navigation -->
 
-  <header class="navbar">
+  <header>
+    <div class="container">
 
-    <div class="container nav-container">
+      <nav>
 
-      <a
-        href="#home"
-        class="logo"
-        aria-label="Ezenwa Christian Chimeremeze home"
-      >
-        Ezenwa <span>Christian</span>
-      </a>
-
-      <nav class="nav-links">
-
-        <a href="#about">About</a>
-
-        <a href="#expertise">
-          Expertise
+        <a href="#top" class="logo">
+          EZENWA CHRISTIAN <span>CHIMEREMEZE</span>
         </a>
 
-        <a href="#technologies">
-          Technologies
-        </a>
-
-        <a href="#projects">
-          Projects
-        </a>
-
-        <a href="#writing">
-          Writing
-        </a>
-
-        <a href="#contact">
-          Contact
-        </a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#writing">Writing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
 
       </nav>
 
     </div>
-
   </header>
 
 
-  <main id="home">
+  <main id="top">
 
-
-    <!-- ====================================================
-         HERO
-    ===================================================== -->
+    <!-- Hero -->
 
     <section class="hero">
 
-      <div class="container hero-content">
-
-        <div class="status">
-
-          <span class="status-dot"></span>
-
-          Building • Writing • Engineering • Exploring AI
-
-        </div>
-
-
-        <div class="hero-role">
-
-          Technical Writer · Full-Stack Developer · AI & Robotics
-
-        </div>
-
-
-        <h1>
-
-          I'm Ezenwa Christian Chimeremeze.
-
-          <br>
-
-          <span class="gradient-text">
-            I build technology and explain how it works.
-          </span>
-
-        </h1>
-
-
-        <p class="hero-description">
-
-          I’m a Technical Writer and Full-Stack Developer
-          focused on developer documentation, software
-          architecture, APIs, artificial intelligence,
-          automation, and emerging robotics technologies.
-
-          I combine hands-on software development with
-          technical communication to turn complex systems
-          into clear, practical, and understandable experiences.
-
-        </p>
-
-
-        <div class="buttons">
-
-          <a
-            href="#projects"
-            class="button button-primary"
-          >
-            Explore My Work
-          </a>
-
-
-          <a
-            href="https://github.com/christianfever31-commits"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="button"
-          >
-            GitHub
-          </a>
-
-
-          <a
-            href="https://medium.com/@ezenwachristianchimeremeze"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="button"
-          >
-            Medium
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ====================================================
-         ABOUT
-    ===================================================== -->
-
-    <section
-      class="section"
-      id="about"
-    >
-
       <div class="container">
 
-        <div class="section-label">
-          Professional Identity
-        </div>
+        <div class="hero-content">
 
-
-        <h2>
-          Software engineering meets
-          technical communication.
-        </h2>
-
-
-        <p class="section-description">
-
-          My work sits at the intersection of software
-          development, technical writing, artificial
-          intelligence, automation, and robotics.
-
-          I approach technology from both sides:
-          understanding how systems are designed and built,
-          while also focusing on how those systems can be
-          explained clearly to developers, technical teams,
-          and users.
-          
-        </p>
-
-
-        <div class="identity-grid">
-
-          <article class="identity-card">
-
-            <h3>
-              What I Do
-            </h3>
-
-            <p>
-
-              I write developer-focused documentation,
-              explore software architectures, build
-              full-stack applications and automation tools,
-              experiment with AI-assisted development,
-              and investigate robotics and embedded systems.
-
-            </p>
-
-          </article>
-
-
-          <article class="identity-card">
-
-            <h3>
-              My Approach
-            </h3>
-
-            <p>
-
-              <strong>
-                Understand → Build → Document → Improve.
-              </strong>
-
-              I believe strong technical communication
-              begins with understanding the underlying
-              technology.
-
-            </p>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ====================================================
-         EXPERTISE
-    ===================================================== -->
-
-    <section
-      class="section"
-      id="expertise"
-    >
-
-      <div class="container">
-
-        <div class="section-label">
-          Expertise
-        </div>
-
-
-        <h2>
-          Areas I work across.
-        </h2>
-
-
-        <p class="section-description">
-
-          My professional interests combine communication,
-          engineering, intelligent systems, and practical
-          experimentation.
-
-        </p>
-
-
-        <div class="cards">
-
-
-          <article class="card">
-
-            <div class="card-icon">
-              ✍️
-            </div>
-
-            <h3>
-              Technical Writing
-            </h3>
-
-            <p>
-
-              Developer documentation, API documentation,
-              technical guides, tutorials, specifications,
-              system explanations, and developer experience
-              content.
-
-            </p>
-
-          </article>
-
-
-          <article class="card">
-
-            <div class="card-icon">
-              💻
-            </div>
-
-            <h3>
-              Full-Stack Development
-            </h3>
-
-            <p>
-
-              Building and experimenting with web
-              applications, APIs, backend systems,
-              databases, frontend interfaces, and
-              software architecture.
-
-            </p>
-
-          </article>
-
-
-          <article class="card">
-
-            <div class="card-icon">
-              🧠
-            </div>
-
-            <h3>
-              AI & Intelligent Systems
-            </h3>
-
-            <p>
-
-              Exploring AI-assisted development,
-              AI agents, automation workflows,
-              intelligent software systems, and
-              practical AI applications.
-
-            </p>
-
-          </article>
-
-
-          <article class="card">
-
-            <div class="card-icon">
-              🤖
-            </div>
-
-            <h3>
-              Robotics & Embedded Systems
-            </h3>
-
-            <p>
-
-              Learning and developing robotics concepts
-              involving sensors, controllers, motors,
-              embedded systems, autonomous behavior,
-              and intelligent machines.
-
-            </p>
-
-          </article>
-
-
-          <article class="card">
-
-            <div class="card-icon">
-              ⚙️
-            </div>
-
-            <h3>
-              Automation
-            </h3>
-
-            <p>
-
-              Designing Python-based tools and workflows
-              for automation, data processing, technical
-              analysis, and software productivity.
-
-            </p>
-
-          </article>
-
-
-          <article class="card">
-
-            <div class="card-icon">
-              🔎
-            </div>
-
-            <h3>
-              SEO & Technical Auditing
-            </h3>
-
-            <p>
-
-              Exploring automated technical SEO analysis,
-              website auditing, structured content,
-              and developer-oriented web diagnostics.
-
-            </p>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ====================================================
-         TECHNOLOGIES
-    ===================================================== -->
-
-    <section
-      class="section"
-      id="technologies"
-    >
-
-      <div class="container">
-
-        <div class="section-label">
-          Technical Stack
-        </div>
-
-
-        <h2>
-          Technologies and technical areas.
-        </h2>
-
-
-        <p class="section-description">
-
-          Technologies I use, study, or apply across my
-          development, documentation, AI, automation,
-          and robotics projects.
-
-        </p>
-
-
-        <div class="technology-box">
-
-          <h3>
-            Core Technologies
-          </h3>
-
-
-          <div class="technology-list">
-
-            <span class="technology">
-              Python
-            </span>
-
-            <span class="technology">
-              JavaScript
-            </span>
-
-            <span class="technology">
-              TypeScript
-            </span>
-
-            <span class="technology">
-              React
-            </span>
-
-            <span class="technology">
-              React Native
-            </span>
-
-            <span class="technology">
-              Node.js
-            </span>
-
-            <span class="technology">
-              Express.js
-            </span>
-
-            <span class="technology">
-              APIs
-            </span>
-
-            <span class="technology">
-              Firebase
-            </span>
-
-            <span class="technology">
-              MongoDB
-            </span>
-
-            <span class="technology">
-              Git
-            </span>
-
-            <span class="technology">
-              GitHub
-            </span>
-
-            <span class="technology">
-              HTML
-            </span>
-
-            <span class="technology">
-              CSS
-            </span>
-
-            <span class="technology">
-              AI Agents
-            </span>
-
-            <span class="technology">
-              AI-Assisted Development
-            </span>
-
-            <span class="technology">
-              Automation
-            </span>
-
-            <span class="technology">
-              Technical Documentation
-            </span>
-
-            <span class="technology">
-              Developer Experience
-            </span>
-
-            <span class="technology">
-              SEO Auditing
-            </span>
-
-            <span class="technology">
-              Robotics
-            </span>
-
-            <span class="technology">
-              Embedded Systems
-            </span>
-
+          <div class="eyebrow">
+            Building · Writing · Engineering · Exploring AI
           </div>
 
-        </div>
+          <h1>
+            EZENWA CHRISTIAN
+            <span>CHIMEREMEZE</span>
+          </h1>
 
-      </div>
+          <div class="hero-title">
+            Technical Writer · Full-Stack Developer · AI & Robotics Builder
+          </div>
 
-    </section>
-
-
-    <!-- ====================================================
-         GEMINIO OS
-    ===================================================== -->
-
-    <section
-      class="section"
-      id="projects"
-    >
-
-      <div class="container">
-
-        <div class="section-label">
-          Featured Project
-        </div>
-
-
-        <h2>
-          Geminio OS
-        </h2>
-
-
-        <p class="section-description">
-
-          An AI-first software platform concept exploring
-          intelligent assistance across software development,
-          productivity, automation, learning, and device
-          workflows.
-
-        </p>
-
-
-        <div class="geminio">
-
-          <span class="geminio-badge">
-            ONGOING PROJECT
-          </span>
-
-
-          <h3>
-            Building an AI-powered
-            software ecosystem.
-          </h3>
-
-
-          <p class="geminio-description">
-
-            Geminio OS explores how AI can become an
-            intelligent layer across the software development
-            lifecycle — from understanding requirements and
-            creating projects to generating code, analyzing
-            systems, debugging, testing, deployment, and
-            optimization.
-
+          <p class="hero-description">
+            I build technology and explain how it works.
+            My work sits at the intersection of software development,
+            technical writing, artificial intelligence, automation,
+            edge AI, and robotics.
           </p>
 
+          <div class="hero-actions">
 
-          <div class="geminio-grid">
+            <a href="#work" class="button button-primary">
+              Explore My Work
+            </a>
 
+            <a
+              href="https://github.com/ezenwachristianchimeremeze"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button button-secondary"
+            >
+              GitHub
+            </a>
 
-            <ul class="feature-list">
+          </div>
 
-              <li>
-                AI-assisted software development
-              </li>
+        </div>
 
-              <li>
-                Product and feature architecture
-              </li>
+      </div>
 
-              <li>
-                Developer documentation
-              </li>
-
-              <li>
-                API and technical specifications
-              </li>
-
-              <li>
-                AI Builder concepts
-              </li>
-
-              <li>
-                AI Phone Assistant concepts
-              </li>
-
-              <li>
-                Automation workflows
-              </li>
-
-              <li>
-                Software analysis and debugging
-              </li>
-
-              <li>
-                Testing and deployment workflows
-              </li>
-
-            </ul>
+    </section>
 
 
-            <div class="project-status">
+    <!-- About -->
 
-              <strong>
-                Project Focus
-              </strong>
+    <section id="about">
 
-              <p>
+      <div class="container">
 
-                AI + Software Engineering + Automation
-                + Developer Experience + Intelligent
-                Device Interaction.
+        <div class="section-heading">
 
-              </p>
+          <div class="small-title">
+            About
+          </div>
+
+          <h2>
+            Understanding systems. Building them. Explaining them.
+          </h2>
+
+        </div>
+
+
+        <div class="about-grid">
+
+          <div class="about-text">
+
+            <p>
+              I'm <strong>Ezenwa Christian Chimeremeze</strong>,
+              a Nigerian Technical Writer and Full-Stack Developer
+              interested in understanding how technology works from
+              the inside out—and then explaining it clearly.
+            </p>
+
+            <p>
+              I began seriously learning programming and technology
+              in April 2023. Since then, I've explored software
+              development, APIs, artificial intelligence, automation,
+              developer documentation, edge computing, embedded
+              systems, and robotics.
+            </p>
+
+            <p>
+              I enjoy working at the point where engineering and
+              communication meet: understanding a technical system,
+              designing or building it, and turning the complexity
+              into documentation that developers can actually use.
+            </p>
+
+            <p>
+              My long-term goal is to contribute to and build practical
+              AI, robotics, and automation technologies that can solve
+              meaningful problems in Africa and beyond.
+            </p>
+
+          </div>
+
+
+          <div>
+
+            <h3>
+              Areas I Work With
+            </h3>
+
+            <div class="skills">
+
+              <span class="skill">Python</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">TypeScript</span>
+              <span class="skill">React</span>
+              <span class="skill">React Native</span>
+              <span class="skill">Node.js</span>
+              <span class="skill">FastAPI</span>
+              <span class="skill">REST APIs</span>
+              <span class="skill">LLM Function Calling</span>
+              <span class="skill">Automation</span>
+              <span class="skill">AI</span>
+              <span class="skill">Edge AI</span>
+              <span class="skill">Computer Vision</span>
+              <span class="skill">Robotics</span>
+              <span class="skill">Embedded Systems</span>
+              <span class="skill">Technical Documentation</span>
+              <span class="skill">Git</span>
+              <span class="skill">GitHub</span>
 
             </div>
 
@@ -1695,55 +764,56 @@
     </section>
 
 
-    <!-- ====================================================
-         OTHER PROJECTS
-    ===================================================== -->
+    <!-- Work -->
 
-    <section class="section">
+    <section id="work">
 
       <div class="container">
 
-        <div class="section-label">
-          Selected Work
+        <div class="section-heading">
+
+          <div class="small-title">
+            Selected Work
+          </div>
+
+          <h2>
+            Projects I'm building and exploring.
+          </h2>
+
+          <p>
+            My projects combine software engineering, documentation,
+            artificial intelligence, automation, and robotics.
+          </p>
+
         </div>
 
 
-        <h2>
-          Projects and experiments.
-        </h2>
+        <div class="projects">
 
 
-        <p class="section-description">
+          <!-- Geminio OS -->
 
-          Practical projects that demonstrate my interests
-          across automation, software development, technical
-          analysis, and intelligent systems.
+          <article class="project">
 
-        </p>
-
-
-        <div class="project-grid">
-
-
-          <article class="project-card">
+            <div class="project-number">
+              01 · AI SOFTWARE SYSTEM
+            </div>
 
             <h3>
-              SEO Automation
+              Geminio OS
             </h3>
 
             <p>
-
-              Exploring automated technical SEO analysis
-              and developer-oriented website auditing
-              workflows using software tools.
-
+              An AI-first operating-system concept focused on helping
+              users with software development, productivity, automation,
+              learning, and device workflows.
             </p>
 
             <a
-              class="project-link"
-              href="https://github.com/christianfever31-commits"
+              href="https://github.com/ezenwachristianchimeremeze"
               target="_blank"
               rel="noopener noreferrer"
+              class="project-link"
             >
               View on GitHub →
             </a>
@@ -1751,162 +821,174 @@
           </article>
 
 
-          <article class="project-card">
+          <!-- AI Research Robot -->
 
-            <h3>
-              AI & Automation Systems
+          <article class="project">
+
+            <div class="project-number">
+              02 · ROBOTICS
+            </div>
+
+            <h3
+                            AI Research Robot
             </h3>
 
             <p>
-
-              Experiments involving AI agents, automation,
-              function calling, data workflows, and
-              intelligent software behavior.
-
+              A planned 4WD autonomous research robot combining
+              Raspberry Pi, ESP32, ROS 2, computer vision, sensors,
+              voice interaction, autonomous navigation, and a
+              robotic arm.
             </p>
 
             <a
+              href="https://github.com/ezenwachristianchimeremeze"
+              target="_blank"
+              rel="noopener noreferrer"
               class="project-link"
-              href="https://github.com/christianfever31-commits"
+            >
+              Explore Project →
+            </a>
+
+          </article>
+
+
+          <!-- Technical Writing -->
+
+          <article class="project">
+
+            <div class="project-number">
+              03 · TECHNICAL WRITING
+            </div>
+
+            <h3>
+              Engineering Articles
+            </h3>
+
+            <p>
+              Technical articles exploring AI systems, LLM function
+              calling, automation, software architecture, APIs,
+              programmatic SEO, and practical engineering concepts.
+            </p>
+
+            <a
+              href="https://ezenwachristianchimeremeze.medium.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              Read My Writing →
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Writing -->
+
+    <section id="writing">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="small-title">
+            Writing
+          </div>
+
+          <h2>
+            Technical ideas, explained clearly.
+          </h2>
+
+          <p>
+            I write about the engineering decisions behind modern
+            software and AI systems.
+          </p>
+
+        </div>
+
+
+        <div class="writing-list">
+
+
+          <article class="article">
+
+            <div>
+
+              <h3>
+                Why Building AI Products Is More Than Connecting an API
+              </h3>
+
+              <p>
+                Exploring the engineering work behind useful AI products.
+              </p>
+
+            </div>
+
+            <a
+              href="https://ezenwachristianchimeremeze.medium.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Explore Projects →
+              Read →
             </a>
 
           </article>
 
 
-          <article class="project-card">
+          <article class="article">
 
-            <h3>
-              Robotics Research
-            </h3>
+            <div>
 
-            <p>
+              <h3>
+                Why Function Calling Is More Important Than Prompt Engineering
+              </h3>
 
-              Ongoing exploration of autonomous robotics,
-              embedded systems, sensors, motor control,
-              intelligent machines, and AI-powered robots.
+              <p>
+                Exploring structured AI workflows and reliable system behavior.
+              </p>
 
-            </p>
+            </div>
 
             <a
-              class="project-link"
-              href="#contact"
+              href="https://ezenwachristianchimeremeze.medium.com/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Learn More →
+              Read →
             </a>
 
           </article>
 
-        </div>
 
-      </div>
+          <article class="article">
 
-    </section>
+            <div>
 
+              <h3>
+                Building Practical AI and Automation Systems
+              </h3>
 
-    <!-- ====================================================
-         WRITING
-    ===================================================== -->
+              <p>
+                Notes and experiments from my software and AI engineering work.
+              </p>
 
-    <section
-      class="section"
-      id="writing"
-    >
+            </div>
 
-      <div class="container">
-
-        <div class="section-label">
-          Technical Writing
-        </div>
-
-
-        <h2>
-          I don't just build systems.
-          I document them.
-        </h2>
-
-
-        <p class="section-description">
-
-          My technical writing focuses on helping developers
-          understand systems, APIs, workflows, architectures,
-          and practical engineering concepts.
-
-        </p>
-
-
-        <div class="writing-grid">
-
-
-          <article class="writing-item">
-
-            <h3>
-              Developer Documentation
-            </h3>
-
-            <p>
-
-              Clear documentation designed to help developers
-              understand, integrate, and work with technical
-              systems.
-
-            </p>
+            <a
+              href="https://ezenwachristianchimeremeze.medium.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Articles →
+            </a>
 
           </article>
 
-
-          <article class="writing-item">
-
-            <h3>
-              Technical Tutorials
-            </h3>
-
-            <p>
-
-              Practical explanations that turn technical
-              concepts into structured, understandable
-              learning experiences.
-
-            </p>
-
-          </article>
-
-
-          <article class="writing-item">
-
-            <h3>
-              AI & Software Engineering
-            </h3>
-
-            <p>
-
-              Writing and research around AI systems,
-              automation, developer workflows, software
-              architecture, and emerging technologies.
-
-            </p>
-
-          </article>
-
-        </div>
-
-
-        <div
-          class="buttons"
-          style="margin-top:30px;"
-        >
-
-          <a
-            href="https://medium.com/@ezenwachristianchimeremeze"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="button button-primary"
-          >
-            Read My Writing
-          </a>
 
         </div>
 
@@ -1915,71 +997,52 @@
     </section>
 
 
-    <!-- ====================================================
-         CONTACT
-    ===================================================== -->
+    <!-- Contact -->
 
-    <section
-      class="section contact"
-      id="contact"
-    >
+    <section id="contact">
 
       <div class="container">
 
-        <div class="section-label">
-          Contact
-        </div>
+        <div class="contact-box">
+
+          <h2>
+            Let's connect.
+          </h2>
+
+          <p>
+            I'm interested in technical writing, developer documentation,
+            software development, AI, automation, edge AI, and robotics.
+            You can explore my work through the links below.
+          </p>
 
 
-        <h2>
-          Let's build and explain
-          better technology.
-        </h2>
+          <div class="social-links">
 
+            <a
+              href="https://github.com/ezenwachristianchimeremeze"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
 
-        <p class="contact-description">
+            <a
+              href="https://ezenwachristianchimeremeze.medium.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Medium
+            </a>
 
-          I’m interested in opportunities involving
-          technical writing, developer documentation,
-          software development, AI systems, automation,
-          and emerging robotics technologies.
+            <a
+              href="https://x.com/EzenwaC20005"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              X
+            </a>
 
-        </p>
-
-
-        <div
-          class="buttons"
-          style="justify-content:center;"
-        >
-
-          <a
-            href="https://github.com/christianfever31-commits"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="button button-primary"
-          >
-            GitHub
-          </a>
-
-
-          <a
-            href="https://medium.com/@ezenwachristianchimeremeze"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="button"
-          >
-            Medium
-          </a>
-
-
-          <a
-            href="https://x.com/EzenwaC20005"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="button"
-          >
-            X
-          </a>
+          </div>
 
         </div>
 
@@ -1990,27 +1053,28 @@
   </main>
 
 
-  <!-- ======================================================
-       FOOTER
-  ======================================================= -->
+  <!-- Footer -->
 
   <footer>
 
-    <div class="container footer-inner">
+    <div class="container">
 
-      <div>
-        © 2026 Ezenwa Christian Chimeremeze.
-      </div>
+      <div class="footer-content">
 
-      <div>
-        Technical Writer · Full-Stack Developer · AI & Robotics
+        <div>
+          © 2026 EZENWA CHRISTIAN CHIMEREMEZE
+        </div>
+
+        <div>
+          Technical Writer · Full-Stack Developer · AI & Robotics
+        </div>
+
       </div>
 
     </div>
 
   </footer>
 
+
 </body>
 </html>
-
-          
